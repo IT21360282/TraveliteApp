@@ -11,20 +11,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TourismHelper"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ResHotelRegisterActivity"
+            android:exported="false" />
         <activity
             android:name=".ResHotelLoginActivity"
-            android:parentActivityName=".ResHotelStartActivity"
-            android:exported="true">
-        </activity>
-
+            android:exported="true"
+            android:parentActivityName=".ResHotelStartActivity"></activity>
         <activity
             android:name=".ResHotelStartActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity">
-        </activity>
-
-
+            android:parentActivityName=".MainActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -34,7 +31,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

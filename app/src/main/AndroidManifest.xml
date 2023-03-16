@@ -12,16 +12,19 @@
         android:theme="@style/Theme.TourismHelper"
         tools:targetApi="31">
         <activity
+            android:name=".TouristSelectActivity"
+            android:exported="false" />
+        <activity
             android:name=".ResHotelRegisterActivity"
             android:exported="false" />
         <activity
             android:name=".ResHotelLoginActivity"
             android:exported="true"
-            android:parentActivityName=".ResHotelStartActivity"></activity>
+            android:parentActivityName=".ResHotelStartActivity" />
         <activity
             android:name=".ResHotelStartActivity"
             android:exported="true"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

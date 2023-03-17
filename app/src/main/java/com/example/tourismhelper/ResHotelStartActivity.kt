@@ -24,5 +24,11 @@ class ResHotelStartActivity : AppCompatActivity() {
             val intent = Intent(this, ResHotelLoginActivity::class.java)
             startActivity(intent)
         }
+        var btnRegister = findViewById<Button>(R.id.resHotelRegister)
+        btnRegister.setOnClickListener {
+            Toast.makeText(this,"Register Selected", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this, ResHotelRegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

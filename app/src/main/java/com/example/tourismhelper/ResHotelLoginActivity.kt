@@ -14,10 +14,10 @@ class ResHotelLoginActivity : AppCompatActivity() {
         var login = supportActionBar
         login?.setTitle("Restaurant/Hotel Login")
 
-        var btnLogin = findViewById<Button>(R.id.btnResHotelRegSubmit)
+        var btnLogin = findViewById<Button>(R.id.btnResHotelLoginSubmit)
         btnLogin.setOnClickListener {
             Toast.makeText(this, "Back to Restaurant/Hotel", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, ResHotelStartActivity::class.java)
+            val intent = Intent(this, ResHotelMainActivity::class.java)
             startActivity(intent)
         }
 

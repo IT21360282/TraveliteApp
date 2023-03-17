@@ -152,7 +152,7 @@
             android:textColorLink="@color/main_color" />
 
         <Button
-            android:id="@+id/btnResHotelRegSubmit"
+            android:id="@+id/btnResHotelLoginSubmit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"

@@ -20,110 +20,125 @@
             app:srcCompat="@drawable/travelite_logo" />
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/vehicleOwnerName_Transport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:ems="10"
-        android:hint="Vehicle Owner Name"
-        android:textSize="15sp"
-        android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/vehicleOwnerNIC_Transport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:ems="10"
-        android:hint="NIC"
-        android:textSize="15sp"
-        android:inputType="textPersonName" />
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="523dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/styles_linear_layout"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/vehicleOwnerContact_Transport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:ems="10"
-        android:hint="Contact Number"
-        android:textSize="15sp"
-        android:inputType="number" />
+        <EditText
+            android:id="@+id/vehicleOwnerName_Transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Vehicle Owner Name"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
 
-    <EditText
-        android:id="@+id/vehicleRegID_Transport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:ems="10"
-        android:hint="Vehicle Reg ID"
-        android:textSize="15sp"
-        android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/vehicleOwnerNIC_Transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="NIC"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:text="Vehicle Type"
-        android:textSize="15sp" />
+        <EditText
+            android:id="@+id/vehicleOwnerContact_Transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Contact Number"
+            android:inputType="number"
+            android:textSize="15sp" />
 
-    <Spinner
-        android:id="@+id/vehicleType_Transport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/vehicleRegID_Transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Vehicle Reg ID"
+            android:inputType="textPersonName"
+            android:textSize="15sp" />
 
-    <EditText
-        android:id="@+id/vehicleOwnerPassword_Transport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter Password"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Vehicle Type"
+            android:textSize="15sp"
+            android:textColor="@color/black"/>
 
-    <EditText
-        android:id="@+id/editTextTextPassword4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Renter Password"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"
-        android:inputType="textPassword" />
+        <Spinner
+            android:id="@+id/vehicleType_Transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"/>
 
-    <CheckBox
-        android:id="@+id/vehicleOwnerAgreement_Transport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="20dp"
-        android:text="I agree to the terms and conditions." />
+        <EditText
+            android:id="@+id/vehicleOwnerPassword_Transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
 
-    <Button
-        android:id="@+id/register2Button_Transport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="40dp"
-        android:background="@drawable/round_corner"
-        android:text="REGISTER"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/main_color" />
+        <EditText
+            android:id="@+id/editTextTextPassword4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Renter Password"
+            android:inputType="textPassword" />
 
+        <CheckBox
+            android:id="@+id/vehicleOwnerAgreement_Transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="I agree to the terms and conditions." />
+
+        <Button
+            android:id="@+id/register2Button_Transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/round_corner"
+            android:text="REGISTER"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/main_color" />
+
+    </LinearLayout>
 </LinearLayout>

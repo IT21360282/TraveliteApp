@@ -33,41 +33,53 @@
         android:textAlignment="center"
         android:textSize="30sp" />
 
-    <EditText
-        android:id="@+id/vehicleOwnerUserName_Transport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        android:textSize="20sp" />
 
-
-    <EditText
-        android:id="@+id/vehicleOwnerPassword_Transport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
-        android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/login2Button_Transport"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="260dp"
+        android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:layout_marginRight="40dp"
-        android:background="@drawable/round_corner"
-        app:backgroundTint="@color/main_color"
-        android:text="Login"
-        android:textColor="@color/white"/>
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/styles_linear_layout"
+        android:orientation="vertical">
 
+        <EditText
+            android:id="@+id/vehicleOwnerUserName_Transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:id="@+id/vehicleOwnerPassword_Transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login2Button_Transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/round_corner"
+            android:text="Login"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/main_color" />
+
+    </LinearLayout>
 </LinearLayout>

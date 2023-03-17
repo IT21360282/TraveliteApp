@@ -41,7 +41,8 @@
         android:background="@drawable/round_corner"
         app:backgroundTint="@color/main_color"
         android:backgroundTintMode="add"
-        android:text="LOGIN" />
+        android:text="LOGIN"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -63,7 +64,8 @@
         android:layout_marginRight="30dp"
         android:background="@drawable/round_corner"
         app:backgroundTint="@color/main_color"
-        android:text="REGISTER" />
+        android:text="REGISTER"
+        android:textColor="@color/white"/>
 
 
 </LinearLayout>

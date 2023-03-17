@@ -67,6 +67,7 @@
         android:layout_marginRight="40dp"
         android:background="@drawable/round_corner"
         app:backgroundTint="@color/main_color"
-        android:text="Login" />
+        android:text="Login"
+        android:textColor="@color/white"/>
 
 </LinearLayout>

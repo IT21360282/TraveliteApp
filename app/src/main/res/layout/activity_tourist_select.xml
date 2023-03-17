@@ -22,25 +22,33 @@
             app:srcCompat="@drawable/travelite_logo" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginRight="50dp"
-        android:text="WELCOME TO TRAVELITE\n Lets Explore SriLanka"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="480dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/styles_linear_layout">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:text="WELCOME TO TRAVELITE\n\n Lets Explore SriLanka"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnTouristReg"
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="50dp"
         android:background="@drawable/round_corner"
         android:text="@string/tourist_Register"
@@ -55,7 +63,7 @@
         android:layout_width="311dp"
         android:layout_height="53dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="50dp"
         android:background="@drawable/round_corner"
         android:text="@string/tourist_login"
@@ -63,17 +71,32 @@
         android:textColor="@color/white"
         app:backgroundTint="@color/main_color" />
 
-    <Button
-        android:id="@+id/btnTouristGuest"
-        android:layout_width="309dp"
-        android:layout_height="53dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/round_corner"
-        android:text="@string/tourist_guest"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/main_color" />
+        <Button
+            android:id="@+id/btnTouristGuest"
+            android:layout_width="309dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_corner"
+            android:text="@string/tourist_guest"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/main_color" />
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:text="Deactivation"
+        android:background="@drawable/round_corner"
+        android:backgroundTint="@color/main_color"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>
 </LinearLayout>

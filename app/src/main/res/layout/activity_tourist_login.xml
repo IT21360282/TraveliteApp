@@ -47,8 +47,10 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="25dp"
             android:text="Enter UserName And Password"
+            android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextTextPersonName9"
@@ -65,8 +67,9 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:textColorHighlight="@color/main_color"
-            android:textColorHint="@color/btnBackNav"
-            android:textColorLink="@color/main_color" />
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/main_color"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextTextPassword2"
@@ -83,8 +86,9 @@
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:textColorHighlight="@color/main_color"
-            android:textColorHint="@color/btnBackNav"
-            android:textColorLink="@color/main_color" />
+            android:textColorHint="@color/black"
+            android:textColorLink="@color/main_color"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btnResHotelLoginSubmit"
@@ -94,7 +98,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="80dp"
             android:background="@drawable/round_corner"
-            android:text="Button"
+            android:text="LOGIN"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:backgroundTint="@color/main_color" />

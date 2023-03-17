@@ -12,6 +12,15 @@
         android:theme="@style/Theme.TourismHelper"
         tools:targetApi="31">
         <activity
+            android:name=".TouristUserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TouristDeactivationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TouristRegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".TouristLoginActivity"
             android:exported="false" />
         <activity

@@ -27,8 +27,12 @@
             android:name=".TouristSelectActivity"
             android:exported="false" />
         <activity
-            android:name=".ResHotelRegisterActivity"
+            android:name=".ResHotelMainActivity"
             android:exported="false" />
+        <activity
+            android:name=".ResHotelRegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".ResHotelStartActivity" />
         <activity
             android:name=".ResHotelLoginActivity"
             android:exported="true"

@@ -9,5 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="main_color">#3779d9</color>
     <color name="btnBackNav">#808080</color>
-    <color name="div_box">#D3D3D3</color>
+    <color name="div_box">#eeeeee</color>
 </resources>

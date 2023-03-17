@@ -7,10 +7,4 @@
     <string name="login_submit">Login</string>
     <string name="un">Username</string>
     <string name="pass">Password</string>
-
-    <string name="tourist_Register">Register</string>
-    <string name="tourist_login">Login</string>
-    <string name="tourist_guest">Continue As a Guest</string>
-    <string name="tourist_Login">Login</string>
-    <string name="tourist_deactivate">Deactivate</string>
 </resources>

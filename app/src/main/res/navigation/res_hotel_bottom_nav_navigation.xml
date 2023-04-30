@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/res_hotel_bottom_nav_navigation"
+    app:startDestination="@id/resHotelProfileFragment">
+
+    <fragment
+        android:id="@+id/resHotelProfileFragment"
+        android:name="com.example.tourismhelper.reshotelfragment.ResHotelProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_res_hotel_profile" />
+    <fragment
+        android:id="@+id/resHotelHistoryFragment"
+        android:name="com.example.tourismhelper.reshotelfragment.ResHotelHistoryFragment"
+        android:label="fragment_res_hotel_history"
+        tools:layout="@layout/fragment_res_hotel_history" />
+</navigation>

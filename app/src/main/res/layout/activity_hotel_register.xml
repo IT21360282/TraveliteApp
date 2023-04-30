@@ -9,15 +9,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="200dp"
-            android:layout_height="100dp"
+            android:layout_height="90dp"
             android:scaleType="centerInside"
             android:src="@drawable/travelite_logo" />
     </LinearLayout>
@@ -42,15 +42,15 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/edtRegUN"
+            android:id="@+id/edtHotelName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/styles_edit_text"
             android:ems="10"
-            android:hint="@string/un"
+            android:hint="Hotel Name"
             android:inputType="textPersonName"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
@@ -60,7 +60,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/edtRegEmail"
+            android:id="@+id/edtHotelRegNo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -68,7 +68,25 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/styles_edit_text"
             android:ems="10"
-            android:hint="@string/personal_email"
+            android:hint="Hotel Registration Number"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/main_color"
+            android:textColorHint="@color/btnBackNav"
+            android:textColorLink="@color/main_color" />
+
+        <EditText
+            android:id="@+id/edtBusinessEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:ems="10"
+            android:hint="Business Email"
             android:inputType="textEmailAddress"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
@@ -78,7 +96,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/edtRegPhone"
+            android:id="@+id/edtBusinessPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -86,7 +104,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/styles_edit_text"
             android:ems="10"
-            android:hint="@string/mobile"
+            android:hint="Busines Phone No."
             android:inputType="textPersonName"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
@@ -112,7 +130,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:text="@string/prof_type"
+                android:text="Star Rated"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -124,14 +142,12 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
                 android:backgroundTint="@color/black"
-                android:entries="@array/bussiness_type"
-                android:popupBackground="@color/white"
-                android:spinnerMode="dropdown"
-                android:textColor="@color/black" />
+                android:entries="@array/star"
+                android:textColor="@color/main_color" />
         </LinearLayout>
 
         <EditText
-            android:id="@+id/edtRegPassword"
+            android:id="@+id/edtBusinessLoc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -139,8 +155,10 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/styles_edit_text"
             android:ems="10"
-            android:hint="@string/pass"
-            android:inputType="textPassword"
+            android:hint="Location (Address)"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:minLines="3"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -149,7 +167,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/edtRegRetypePassword"
+            android:id="@+id/edtCountRooms"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -157,8 +175,8 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/styles_edit_text"
             android:ems="10"
-            android:hint="@string/re_pass"
-            android:inputType="textPassword"
+            android:hint="Total Rooms"
+            android:inputType="textPersonName"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -166,26 +184,16 @@
             android:textColorHint="@color/btnBackNav"
             android:textColorLink="@color/main_color" />
 
-        <CheckBox
-            android:id="@+id/checkRegAccept"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:buttonTint="@color/black"
-            android:text="Accept Terms &amp; Conditions"
-            android:textColor="@color/black"
-            android:textColorLink="@color/main_color" />
 
         <Button
-            android:id="@+id/btnNextRegResHotel"
+            android:id="@+id/btnSubmitHotel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="80dp"
             android:background="@drawable/round_corner"
-            android:text="Next"
+            android:text="Sunmit"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:backgroundTint="@color/main_color" />

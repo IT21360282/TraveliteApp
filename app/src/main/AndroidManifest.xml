@@ -37,6 +37,24 @@
             android:exported="false"
             android:parentActivityName=".ResHotelRegisterActivity" />
         <activity
+            android:name=".GuideEditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuideReviewViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuideTestactivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuideProfileViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuideRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuideLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".TouristSelectActivity"
             android:exported="false" />
         <activity

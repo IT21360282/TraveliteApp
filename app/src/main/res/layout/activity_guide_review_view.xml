@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reshotelfragment.ResHotelHistoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styles_linear_layout"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/GuideImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/baseline_person_24"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="23dp" />
+
+                <RatingBar
+                    android:id="@+id/GuideratingBar"
+                    android:layout_width="242dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="61dp" />
+
+                <TextView
+                    android:id="@+id/GuideTouristUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="23dp"
+                    tools:text="@string/TUserName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styles_linear_layout"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/GuideImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/baseline_person_24"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="23dp" />
+
+                <RatingBar
+                    android:id="@+id/GuideratingBar"
+                    android:layout_width="242dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="61dp" />
+
+                <TextView
+                    android:id="@+id/GuideTouristUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="23dp"
+                    tools:text="@string/TUserName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styles_linear_layout"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/GuideImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/baseline_person_24"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="23dp" />
+
+                <RatingBar
+                    android:id="@+id/GuideratingBar"
+                    android:layout_width="242dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="61dp" />
+
+                <TextView
+                    android:id="@+id/GuideTouristUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="23dp"
+                    tools:text="@string/TUserName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styles_linear_layout"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/GuideImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/baseline_person_24"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="23dp" />
+
+                <RatingBar
+                    android:id="@+id/GuideratingBar"
+                    android:layout_width="242dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="61dp" />
+
+                <TextView
+                    android:id="@+id/GuideTouristUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="23dp"
+                    tools:text="@string/TUserName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styles_linear_layout"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/GuideImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/baseline_person_24"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="23dp" />
+
+                <RatingBar
+                    android:id="@+id/GuideratingBar"
+                    android:layout_width="242dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="61dp" />
+
+                <TextView
+                    android:id="@+id/GuideTouristUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="23dp"
+                    tools:text="@string/TUserName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styles_linear_layout"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/GuideImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/baseline_person_24"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="23dp" />
+
+                <RatingBar
+                    android:id="@+id/GuideratingBar"
+                    android:layout_width="242dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="61dp" />
+
+                <TextView
+                    android:id="@+id/GuideTouristUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="23dp"
+                    tools:text="@string/TUserName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styles_linear_layout"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/GuideImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/baseline_person_24"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="23dp" />
+
+                <RatingBar
+                    android:id="@+id/GuideratingBar"
+                    android:layout_width="242dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="61dp" />
+
+                <TextView
+                    android:id="@+id/GuideTouristUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="23dp"
+                    tools:text="@string/TUserName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styles_linear_layout"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/GuideImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/baseline_person_24"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="23dp" />
+
+                <RatingBar
+                    android:id="@+id/GuideratingBar"
+                    android:layout_width="242dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="61dp" />
+
+                <TextView
+                    android:id="@+id/GuideTouristUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="23dp"
+                    tools:text="@string/TUserName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styles_linear_layout"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/GuideImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/baseline_person_24"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="23dp" />
+
+                <RatingBar
+                    android:id="@+id/GuideratingBar"
+                    android:layout_width="242dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="61dp" />
+
+                <TextView
+                    android:id="@+id/GuideTouristUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="23dp"
+                    tools:text="@string/TUserName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styles_linear_layout"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/GuideImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/baseline_person_24"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="23dp" />
+
+                <RatingBar
+                    android:id="@+id/GuideratingBar"
+                    android:layout_width="242dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="61dp" />
+
+                <TextView
+                    android:id="@+id/GuideTouristUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="23dp"
+                    tools:text="@string/TUserName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/styles_linear_layout"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/GuideImageView"
+                    android:layout_width="103dp"
+                    android:layout_height="89dp"
+                    android:src="@drawable/baseline_person_24"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="23dp" />
+
+                <RatingBar
+                    android:id="@+id/GuideratingBar"
+                    android:layout_width="242dp"
+                    android:layout_height="0dp"
+                    tools:layout_editor_absoluteX="102dp"
+                    tools:layout_editor_absoluteY="61dp" />
+
+                <TextView
+                    android:id="@+id/GuideTouristUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/main_color"
+                    android:textColorHint="@color/main_color"
+                    android:textSize="16sp"
+                    tools:layout_editor_absoluteX="119dp"
+                    tools:layout_editor_absoluteY="23dp"
+                    tools:text="@string/TUserName" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

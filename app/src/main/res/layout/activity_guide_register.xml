@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bac"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="674dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/styles_linear_layout"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Tour guide registration"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/GuideeditFirstName"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/styles_edit_text"
+                android:ems="10"
+                android:hint="@string/GuideFirstname"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHighlight="@color/main_color"
+                android:textColorHint="@color/btnBackNav"
+                android:textColorLink="@color/main_color" />
+
+            <EditText
+                android:id="@+id/GuideeditLastName"
+                android:layout_width="133dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/styles_edit_text"
+                android:ems="10"
+                android:hint="@string/GuideLastname"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColorHighlight="@color/main_color"
+                android:textColorHint="@color/btnBackNav"
+                android:textColorLink="@color/main_color" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/GuideeditUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:ems="10"
+            android:hint="@string/un"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/main_color"
+            android:textColorHint="@color/btnBackNav"
+            android:textColorLink="@color/main_color" />
+
+
+        <EditText
+            android:id="@+id/editGuidePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:ems="10"
+            android:hint="@string/pass"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/main_color"
+            android:textColorHint="@color/btnBackNav"
+            android:textColorLink="@color/main_color" />
+
+        <EditText
+            android:id="@+id/editGuideRetypePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:ems="10"
+            android:hint="@string/re_pass"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/main_color"
+            android:textColorHint="@color/btnBackNav"
+            android:textColorLink="@color/main_color" />
+
+        <EditText
+            android:id="@+id/editGuideOTBLSNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:ems="10"
+            android:hint="@string/GuideOTBLSNum"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/main_color"
+            android:textColorHint="@color/btnBackNav"
+            android:textColorLink="@color/main_color" />
+        <EditText
+            android:id="@+id/editGuideEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/main_color"
+            android:textColorHint="@color/btnBackNav"
+            android:textColorLink="@color/main_color" />
+
+        <EditText
+            android:id="@+id/editGuideTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:ems="10"
+            android:hint="@string/mobile"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/main_color"
+            android:textColorHint="@color/btnBackNav"
+            android:textColorLink="@color/main_color" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:buttonTint="@color/black"
+            android:text="Accept Terms &amp; Conditions"
+            android:textColor="@color/black"
+            android:textColorLink="@color/main_color" />
+
+        <Button
+            android:id="@+id/GuideSignupBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/round_corner"
+            android:hint="@string/login_submit"
+            android:text="@string/register_submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/main_color" />
+
+    </LinearLayout>
+
+</LinearLayout>

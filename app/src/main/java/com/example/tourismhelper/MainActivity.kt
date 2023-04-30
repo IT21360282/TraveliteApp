@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import com.example.tourismhelper.reshotelfragment.ResHotelHomeFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +20,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ResHotelStartActivity::class.java)
             startActivity(intent)
         }
+
+        val btnTourist = findViewById<Button>(R.id.btnTourist)
+        btnTourist.setOnClickListener {
+            val intent = Intent(this, RestaurantDisplayListActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

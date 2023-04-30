@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import com.example.tourismhelper.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -15,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ResHotelIncomeFragment.newInstance] factory method to
+ * Use the [HotelAddRoomFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ResHotelIncomeFragment : Fragment() {
+class HotelAddRoomFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,25 +33,10 @@ class ResHotelIncomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View ?{
+    ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_res_hotel_income, container, false)
-
-        val btnAddRoom = view?.findViewById<Button>(R.id.addHotelRoom)
-        btnAddRoom?.setOnClickListener {
-            val addRoomFragment = HotelAddRoomFragment()
-            parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel, addRoomFragment).commit()
-        }
-        val btnAddMeal = view?.findViewById<Button>(R.id.addHotelMeal)
-        btnAddMeal?.setOnClickListener {
-            val addMealFragment = HotelAddMealFragment()
-            parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel, addMealFragment).commit()
-        }
-        val btnAddPackage = view?.findViewById<Button>(R.id.addHotelPackage)
-        btnAddPackage?.setOnClickListener {
-            val addPackageFragment = HotelAddPackageFragment()
-            parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel, addPackageFragment).commit()
-        }
+        val view = inflater.inflate(R.layout.fragment_hotel_add_room, container, false)
+        activity?.title ="Add New Room"
         return view
     }
 
@@ -63,12 +47,12 @@ class ResHotelIncomeFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment ResHotelIncomeFragment.
+         * @return A new instance of fragment HotelAddRoomFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ResHotelIncomeFragment().apply {
+            HotelAddRoomFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

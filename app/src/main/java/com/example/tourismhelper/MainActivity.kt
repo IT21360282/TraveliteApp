@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btnTourist = findViewById<Button>(R.id.btnTourist)
+        val btnTourist = findViewById<Button>(R.id.btnTourist)    
         btnTourist.setOnClickListener {
-            val intent = Intent(this, RestaurantDisplayListActivity::class.java)
+            Toast.makeText(this, "Tourist Selected", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, TouristSelectActivity::class.java)
             startActivity(intent)
         }
-
 
     }
 }

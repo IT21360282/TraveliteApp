@@ -37,6 +37,21 @@
             android:exported="false"
             android:parentActivityName=".ResHotelRegisterActivity" />
         <activity
+            android:name=".TouristMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TouristUserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TouristDeactivationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TouristRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TouristLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".TouristSelectActivity"
             android:exported="false" />
         <activity

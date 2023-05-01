@@ -4,8 +4,7 @@
     <string name="res_hotel_start_txt2">Do not have an account.\nRegister as hotel/restaurant owner</string>
     <string name="login">Log In</string>
     <string name="register">Register</string>
-    <string name="login_submit">Sign In</string>
-    <string name="register_submit">Sign Up</string>
+    <string name="login_submit">Login</string>
     <string name="un">Username</string>
     <string name="pass">Password</string>
     <string name="re_pass">Retype Password</string>

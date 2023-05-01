@@ -7,6 +7,71 @@
     <string name="login_submit">Login</string>
     <string name="un">Username</string>
     <string name="pass">Password</string>
+    <string name="re_pass">Retype Password</string>
+    <string name="mobile">Phone No.</string>
+    <string name="personal_email">Personal Email</string>
+    <string name="select_re_hotel">Select Your Business Type</string>
+    <string name="prof_name">Owner Name :</string>
+    <string name="prof_email">Owner Email :</string>
+    <string name="prof_phone">Owner Contact No. :</string>
+    <string name="prof_loc">Business Location :</string>
+    <string name="prof_joined">Joined Data :</string>
+    <string name="prof_type">Business Type</string>
+    <string name="prof_Business">Business Name</string>
+    <string name="name_val">Sanjana Nilanka Perera</string>
+    <string name="business_name_val">Tablo Hotel</string>
+    <string name="pro_up">Update Profile</string>
+    <string name="change_pass">Change Password</string>
+    <string name="add_room">Add New Room</string>
+    <string name="add_package">Add New Package</string>
+    <string name="add_meals">Add New Meal</string>
+    <string name="room_name">Room Name</string>
+    <string name="room_price">Price</string>
+    <string name="room_description">Description</string>
+    <string name="room_Conditon">Select Room Conditons</string>
+    <string name="for_person">Room for</string>
+    <string name="payment_type">Payment Type</string>
+    <string-array name="bussiness_type">
+        <item>Restaurant</item>
+        <item>Hotel</item>
+    </string-array>
+    <string-array name="star">
+        <item>Not Rated</item>
+        <item>★</item>
+        <item>★★</item>
+        <item>★★★</item>
+        <item>★★★★</item>
+        <item>★★★★★</item>
+    </string-array>
+    <string-array name="room_person_val">
+        <item>Single Person</item>
+        <item>Couple</item>
+        <item>Family(3 - 4 Persons)</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="room_pay_for">
+        <item>Per Night</item>
+        <item>Per Day</item>
+        <item>Per Duration</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="filter">
+        <item>none</item>
+        <item>5 star</item>
+        <item>3 star</item>
+        <item>2 star</item>
+    </string-array>
+    <string-array name="served_person">
+        <item>1 Person</item>
+        <item>2 Persons</item>
+        <item>3 Persons</item>
+        <item>4 Persons</item>
+        <item>6 Persons</item>
+        <item>10 Persons</item>
+        <item>Other</item>
+    </string-array>
+    <string name="Restaurant_home_text">You can attract customers\nby maintaining the restaurant profile properly.\nTherefore update your restaurant profile recently\nwith new meals, combo pack, and discounts</string>
+    <string name="Hotel_home_text">You can attract customers\nby maintaining the hotel profile properly.\nTherefore update your hotel profile recently\nwith new rooms, meals, and packages</string>
     <string name="large_text">
         "Material is the metaphor.\n\n"
 

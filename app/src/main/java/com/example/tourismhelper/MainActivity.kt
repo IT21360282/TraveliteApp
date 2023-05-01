@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import com.example.tourismhelper.reshotelfragment.ResHotelHomeFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        val btnTourist = findViewById<Button>(R.id.btnTourist)
+        val btnTourist = findViewById<Button>(R.id.btnTourist)    
         btnTourist.setOnClickListener {
             Toast.makeText(this, "Tourist Selected", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, TouristSelectActivity::class.java)

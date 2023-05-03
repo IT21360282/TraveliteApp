@@ -13,7 +13,7 @@ class TouristMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_res_hotel_main)
 
-        var resHotelBottomNav = findViewById<BottomNavigationView>(R.id.)
+        var resHotelBottomNav = findViewById<BottomNavigationView>(R.id.TouristBtnNav)
         resHotelBottomNav.setOnItemSelectedListener { item->
             when(item.itemId){
                 R.id.tournavHome ->{
@@ -29,7 +29,6 @@ class TouristMainActivity : AppCompatActivity() {
                 else->false
             }
         }
-        loadFragment(())
     }
     private fun loadFragment(fragment: Fragment){
         supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel,fragment).commit()

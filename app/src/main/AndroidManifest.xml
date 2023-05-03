@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +13,44 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TourismHelper"
         tools:targetApi="31">
+
+        <activity
+            android:name=".RestaurantProfileViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantDisplayListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HotelProfileViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RestaurantMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResHotelDisplayListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResHotelInTouristSelectDistrict"
+            android:exported="false" />
+        <activity
+            android:name=".HotelRegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".ResHotelRegisterActivity" />
+        <activity
+            android:name=".TouristMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TouristUserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TouristDeactivationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TouristRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TouristLoginActivity"
+            android:exported="false" />
         <activity
             android:name=".TransportRegisterActivity"
             android:exported="false">
@@ -36,8 +76,12 @@
             android:name=".TouristSelectActivity"
             android:exported="false" />
         <activity
-            android:name=".ResHotelRegisterActivity"
+            android:name=".ResHotelMainActivity"
             android:exported="false" />
+        <activity
+            android:name=".ResHotelRegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".ResHotelStartActivity" />
         <activity
             android:name=".ResHotelLoginActivity"
             android:exported="true"

@@ -51,7 +51,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName9"
+            android:id="@+id/edtLoginUNorEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -69,7 +69,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/edtLoginPass"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -87,17 +87,25 @@
             android:textColorLink="@color/main_color" />
 
         <Button
-            android:id="@+id/btnResHotelLoginSubmit"
+            android:id="@+id/btnSubmitLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="80dp"
             android:background="@drawable/round_corner"
-            android:text="Button"
+            android:text="@string/login"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:backgroundTint="@color/main_color" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtViewLoginToReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Does Not Have Account? Register Here"
+        android:textAlignment="center" />
 
 </LinearLayout>

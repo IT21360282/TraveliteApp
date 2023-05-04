@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transportfragment.TransportProvidersMoreFragment">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainerResHotel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/resHotelBottomNav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:background="@color/main_color"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/textView_more_details_name_Transport"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Dhanu Transports"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="30dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                android:text="Drives taxicabs, company cars, or privately-owned vehicles to transport passengers. Assists passengers with entering and exiting vehicles and assists with any luggage. "
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="17sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView_more_details_ownerName_Transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Owner Name : Jayathilaka D.V.G."
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+
+            <TextView
+                android:id="@+id/textView_more_details_ownerContact_Transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Number : +94718654676"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView_more_details_ownerType_Transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Type : Car"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/textView_more_details_ownerPrice_Transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Per 1KM : 100LKR"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView_more_details_ownerReviews_Transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reviews : 105"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp" />
+
+            <Button
+                android:id="@+id/button_more_details_book_Transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/round_corner"
+                android:text="BOOK"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/main_color" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>

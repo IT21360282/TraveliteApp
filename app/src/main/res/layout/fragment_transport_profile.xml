@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".transportfragment.TransportProfileFragment">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainerResHotel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/resHotelBottomNav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:orientation="horizontal"
+                android:background="@color/main_color">
+
+                <TextView
+                    android:id="@+id/textView_profileName_Transport"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Dhanu Transports"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="30dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/main_color"
+
+                android:orientation="horizontal">
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Owner Name:"
+                android:textColor="@color/main_color"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/textView_profileOwnername_Transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jayathilaka D.V.G."
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Owner NIC:"
+                android:textColor="@color/main_color"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView_profileOwnerNIC_Transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="200202502117"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Number:"
+                android:textColor="@color/main_color"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView_profileOwnerContact_Transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+94718654676"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Registration Number:"
+                android:textColor="@color/main_color"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/textView_profileOwnerReg_Transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAX 0234"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vehicle Type:"
+                android:textColor="@color/main_color"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/textView_profileOwnerType_Transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Car"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>

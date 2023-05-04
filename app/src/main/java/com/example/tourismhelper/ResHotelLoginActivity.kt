@@ -37,7 +37,7 @@ class ResHotelLoginActivity : AppCompatActivity() {
     private fun validate(user:String, password:String) {
         var un = "nilanka"
         var pass = "SN1234"
-        var bType = "restaurant"
+        var bType = "hotel"
         if(un == user && pass == password){
             if(bType == "hotel"){
                 Toast.makeText(this, "Login Successfully", Toast.LENGTH_SHORT).show()

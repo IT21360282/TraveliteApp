@@ -51,10 +51,15 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
+            android:background="@drawable/styles_edit_text"
             android:ems="10"
             android:hint="Username"
             android:inputType="textPersonName"
-            android:textSize="20sp" />
+
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+             />
 
 
         <EditText
@@ -64,10 +69,15 @@
             android:layout_marginLeft="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
+            android:background="@drawable/styles_edit_text"
             android:ems="10"
             android:hint="Password"
             android:inputType="textPassword"
-            android:textSize="20sp" />
+
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+              />
 
         <Button
             android:id="@+id/login2Button_Transport"

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".transportfragment.TransportProvidersFragment">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainerResHotel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/resHotelBottomNav">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_linear_layout"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_providerName_Transport"
+                            android:layout_width="148dp"
+                            android:layout_height="28dp"
+                            android:text="Dhanu Travels"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/main_color"
+                            android:textSize="23dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerContact_Transport"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5"
+                            tools:layout_editor_absoluteX="98dp" />
+
+                        <Button
+                            android:id="@+id/button_providerMore_Transport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/main_color"
+                            android:text="More"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_providerContact_Transport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+94718654676"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerPrice_Transport"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerName_Transport"
+                            app:layout_constraintVertical_bias="0.5"
+                            tools:layout_editor_absoluteX="98dp"
+                            android:textSize="17dp"/>
+
+                        <TextView
+                            android:id="@+id/textView_providerPrice_Transport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="100LKR per 1KM"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerContact_Transport"
+                            app:layout_constraintVertical_bias="0.5"
+                            tools:layout_editor_absoluteX="98dp"
+                            android:textSize="17dp"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+
+                </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>

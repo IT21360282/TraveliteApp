@@ -62,8 +62,10 @@ class ResHotelLoginActivity : AppCompatActivity() {
 
         /*var un = "nilanka"
         var pass = "SN1234"
+
         var bType = "restaurant"
         if(un == userTxt && pass == passwordTxt){
+
             if(bType == "hotel"){
                 Toast.makeText(this, "Login Successfully", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, ResHotelMainActivity::class.java)

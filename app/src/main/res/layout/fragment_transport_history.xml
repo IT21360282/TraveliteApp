@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".transportfragment.TransportHistoryFragment">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainerResHotel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/resHotelBottomNav">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_linear_layout"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_historyName_Transport"
+                            android:layout_width="148dp"
+                            android:layout_height="28dp"
+                            android:text="To Kandy"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/main_color"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_historyKM_Transport"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5"
+                            tools:layout_editor_absoluteX="98dp" />
+
+                        <ImageView
+                            android:id="@+id/imageView_historyLogo_Transport"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_weight="1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5"
+                            tools:src="@drawable/travelite_logo" />
+
+
+                        <TextView
+                            android:id="@+id/textView_historyKM_Transport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="450KM"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_historyLKR_Transport"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_historyName_Transport"
+                            app:layout_constraintVertical_bias="0.5"
+                            tools:layout_editor_absoluteX="98dp" />
+
+                        <TextView
+                            android:id="@+id/textView_historyLKR_Transport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="12000LKR"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_historyKM_Transport"
+                            app:layout_constraintVertical_bias="0.5"
+                            tools:layout_editor_absoluteX="98dp" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -123,43 +123,6 @@
                 </LinearLayout>
 
 
-
-
-
-
-
-                <Button
-                    android:id="@+id/btnfavAdd"
-                    android:layout_width="match_parent"
-                    android:layout_height="53dp"
-                    android:layout_marginLeft="110dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginRight="110dp"
-                    android:background="@drawable/round_corner"
-                    android:text="Add list"
-                    android:textAlignment="center"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:backgroundTint="@color/main_color" />
-
-                <Button
-                    android:id="@+id/btnfavedit"
-                    android:layout_width="match_parent"
-                    android:layout_height="53dp"
-                    android:layout_marginLeft="110dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginRight="110dp"
-                    android:background="@drawable/round_corner"
-                    android:text="Edit List"
-                    android:textAlignment="center"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:backgroundTint="@color/main_color" />
-
             </LinearLayout>
         </FrameLayout>
 

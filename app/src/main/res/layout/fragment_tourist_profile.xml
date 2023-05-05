@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="50dp"
         android:text="Travelite Profile"
         android:textAlignment="center"
@@ -42,14 +42,14 @@
 
     <LinearLayout
         android:layout_width="350dp"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:orientation="vertical"
         android:layout_gravity="center"
         android:background="@drawable/styles_linear_layout">
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/userFirstName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -60,7 +60,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/userLastName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -71,7 +71,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/userEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -82,7 +82,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/userPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -93,7 +93,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/userCountry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -102,5 +102,37 @@
             android:text="United Kingdom"
             android:textSize="20sp"
             android:textStyle="bold|italic" />
+
+        <Button
+            android:id="@+id/touristbtnProfUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_corner"
+            android:inputType="textCapWords"
+            android:text="Update"
+            android:textColor="@color/div_box"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/main_color" />
+
+        <Button
+            android:id="@+id/touristbtnProfDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_corner"
+            android:inputType="textCapWords"
+            android:text="Deactivate Account"
+            android:textColor="@color/div_box"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/main_color" />
     </LinearLayout>
 </LinearLayout>

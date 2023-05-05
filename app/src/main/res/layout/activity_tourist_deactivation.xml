@@ -19,112 +19,51 @@
 
     <LinearLayout
         android:layout_width="350dp"
-        android:layout_height="540dp"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/styles_linear_layout">
-
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginRight="50dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="First Name"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="50dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Last Name"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="50dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Email"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="50dp"
-        android:ems="10"
-        android:hint="Username"
-        android:inputType="textPersonName"
-        android:text="Username"
-        android:textStyle="bold" />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/styles_linear_layout"
+        android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editTextTextPassword4"
+            android:id="@+id/editTextTextPersonName11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="50dp"
             android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:textColorHint="@color/black"
+            android:inputType="textPersonName"
+            android:text="Reason"
             android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName11"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="50dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Reason"
-        android:textStyle="bold" />
+        <Button
+            android:id="@+id/btntouristdeact1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/main_color"
+            android:text="Deactivate"
+            android:textColor="@color/div_box"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btntouristdeact1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/round_corner"
-        android:backgroundTint="@color/main_color"
-        android:text="Deactivate"
-        android:textColor="@color/div_box"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/btntouristdeact2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="50dp"
-        android:background="@drawable/round_corner"
-        android:backgroundTint="@color/main_color"
-        android:text="Back"
-        android:textColor="@color/div_box"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-</LinearLayout>
+        <Button
+            android:id="@+id/btntouristdeact2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_corner"
+            android:backgroundTint="@color/main_color"
+            android:text="Back"
+            android:textColor="@color/div_box"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 </LinearLayout>

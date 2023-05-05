@@ -46,7 +46,7 @@ class TouristRegisterActivity : AppCompatActivity() {
 
             if(touristUsername.text.toString().isNotEmpty()) {
                 databaseReference =
-                    FirebaseDatabase.getInstance().getReference("transport_provider")
+                    FirebaseDatabase.getInstance().getReference("tourist")
                 var Tourists = tourist(
                     touristFirstname.text.toString(),
                     touristLastname.text.toString(),

@@ -9,126 +9,117 @@
     <!-- TODO: Update blank fragment layout -->
 
 
-        <FrameLayout
-            android:id="@+id/fragmentContainerResHotel"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@+id/TouristBtnNav">
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="20dp"
+                android:text="History of your Bookings"
+                android:textColor="@color/main_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="110dp"
-                    android:layout_marginTop="20dp"
-                    android:text="History of your Bookings"
-                    android:textColor="@color/main_color"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                android:layout_width="350dp"
+                android:layout_height="118dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/styles_linear_layout"
+                android:orientation="vertical">
 
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <LinearLayout
-                    android:layout_width="350dp"
-                    android:layout_height="118dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/styles_linear_layout"
-                    android:orientation="vertical"
-                    >
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="148dp"
+                        android:layout_height="28dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="104dp"
+                        android:text="Queens Hotel"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/main_color"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
 
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5"
+                         />
 
-                        <TextView
-                            android:id="@+id/textView15"
-                            android:layout_width="148dp"
-                            android:layout_height="28dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginEnd="104dp"
-                            android:text="Queens Hotel"
-                            android:textAlignment="viewStart"
-                            android:textColor="@color/main_color"
-                            android:textSize="20dp"
-                            app:layout_constraintBottom_toTopOf="@+id/textView16"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/imageView3"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.5" />
+                    <Button
+                        android:id="@+id/btntourloc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/styles_linear_layout"
+                        android:text="Clear"
+                        app:backgroundTint="@color/main_color"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
 
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_weight="1"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.5"
-                            tools:src="@drawable/queen" />
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="74dp"
+                        android:text="Single Room"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/textView17"
+                        app:layout_constraintEnd_toStartOf="@+id/btntourloc1"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toBottomOf="@+id/textView15"
+                        app:layout_constraintVertical_bias="0.5" />
 
-                        <Button
-                            android:id="@+id/btntourloc1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="40dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/styles_linear_layout"
-                            app:backgroundTint="@color/main_color"
-                            android:text="Clear"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.5" />
-
-                        <TextView
-                            android:id="@+id/textView16"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginEnd="74dp"
-                            android:text="Single Room"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toTopOf="@+id/textView17"
-                            app:layout_constraintEnd_toStartOf="@+id/btntourloc1"
-                            app:layout_constraintStart_toEndOf="@+id/imageView3"
-                            app:layout_constraintTop_toBottomOf="@+id/textView15"
-                            app:layout_constraintVertical_bias="0.5" />
-
-                        <TextView
-                            android:id="@+id/textView17"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginEnd="85dp"
-                            android:text="Booking date : 2023.02.09"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/imageView3"
-                            app:layout_constraintTop_toBottomOf="@+id/textView16"
-                            app:layout_constraintVertical_bias="0.5" />
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </LinearLayout>
-
-
-
-
-
-
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="85dp"
+                        android:text="Booking date : 2023.02.09"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toBottomOf="@+id/textView16"
+                        app:layout_constraintVertical_bias="0.5" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
             </LinearLayout>
-        </FrameLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 
-</androidx.core.widget.NestedScrollView>
+</FrameLayout>
 
 
 

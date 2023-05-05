@@ -27,7 +27,7 @@
         android:background="@drawable/styles_linear_layout">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/touristfirstname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -39,7 +39,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/touristlastname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -51,7 +51,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/touristemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -63,7 +63,7 @@
         android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/touristusername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -76,7 +76,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/touristpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -89,7 +89,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/touristconfirmpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -101,7 +101,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/touristcontactnumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -113,7 +113,7 @@
             android:textStyle="bold" />
 
         <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/touristbirthcountry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -137,14 +137,14 @@
             android:textStyle="bold" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/touristgender"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp" />
 
         <Button
-            android:id="@+id/btnReg1"
+            android:id="@+id/touristbtnReg1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"

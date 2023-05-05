@@ -11,10 +11,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class TouristMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_res_hotel_main)
+        setContentView(R.layout.activity_tourist_main)
 
-        var resHotelBottomNav = findViewById<BottomNavigationView>(R.id.)
-        resHotelBottomNav.setOnItemSelectedListener { item->
+        var TouristBtnNav = findViewById<BottomNavigationView>(R.id.TouristBtnNav)
+        TouristBtnNav.setOnItemSelectedListener { item->
             when(item.itemId){
                 R.id.tournavHome ->{
                     loadFragment(TouristHomeFragment())
@@ -29,9 +29,9 @@ class TouristMainActivity : AppCompatActivity() {
                 else->false
             }
         }
-        loadFragment(())
+
     }
     private fun loadFragment(fragment: Fragment){
-        supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel,fragment).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerTourist,fragment).commit()
     }
 }

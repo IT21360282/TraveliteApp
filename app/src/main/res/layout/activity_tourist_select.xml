@@ -44,7 +44,7 @@
             android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btnTouristReg"
+        android:id="@+id/btnTouristlog"
         android:layout_width="match_parent"
         android:layout_height="53dp"
         android:layout_marginLeft="50dp"
@@ -58,7 +58,7 @@
         app:backgroundTint="@color/main_color" />
 
         <Button
-            android:id="@+id/btnTouristLog"
+            android:id="@+id/btnTouristreg"
             android:layout_width="match_parent"
             android:layout_height="53dp"
             android:layout_marginLeft="50dp"

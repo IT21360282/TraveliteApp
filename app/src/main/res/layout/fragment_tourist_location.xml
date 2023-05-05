@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".tourfragment.TouristLocationFragment">
+
+        <FrameLayout
+            android:id="@+id/fragmentContainerResHotel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="60dp"
+                        android:text="Best places to visit"
+                        android:textAlignment="center"
+                        android:textAllCaps="true"
+                        android:textColor="@color/main_color"
+                        android:textColorHint="@color/main_color"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="350dp"
+                        android:layout_height="118dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/styles_linear_layout"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="148dp"
+                                android:layout_height="28dp"
+                                android:layout_marginStart="3dp"
+                                android:layout_marginEnd="104dp"
+                                android:text="Temple of tooth relic"
+                                android:textAlignment="viewStart"
+                                android:textColor="@color/main_color"
+                                android:textSize="14sp"
+                                android:textStyle="bold|italic"
+                                app:layout_constraintBottom_toTopOf="@+id/textView16"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.5" />
+
+                            <ImageView
+                                android:id="@+id/imageView3"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_weight="1"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/textView15"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.5"
+                                tools:src="@drawable/maligawa" />
+
+                            <Button
+                                android:id="@+id/btntourloc1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round_corner"
+                                app:backgroundTint="@color/main_color"
+                                android:text="View"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.5" />
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginEnd="36dp"
+                                android:text="Central Province"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toTopOf="@+id/textView17"
+                                app:layout_constraintEnd_toStartOf="@+id/btntourloc1"
+                                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                                app:layout_constraintVertical_bias="0.5" />
+
+                            <TextView
+                                android:id="@+id/textView17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="6dp"
+                                android:layout_marginEnd="207dp"
+                                android:text="Kandy"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                                app:layout_constraintVertical_bias="0.5" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </FrameLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

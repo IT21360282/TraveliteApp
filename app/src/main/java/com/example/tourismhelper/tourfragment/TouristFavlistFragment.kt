@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.tourismhelper.R
 
-class TouristHomeFragment : Fragment() {
+class TouristFavlistFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_tourist_home2, container, false)
+        return inflater.inflate(R.layout.fragment_tourist_favlist, container, false)
     }
 }

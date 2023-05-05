@@ -12,7 +12,7 @@ import com.google.firebase.database.FirebaseDatabase
 class TouristRegisterActivity : AppCompatActivity() {
 
     private lateinit var databaseReference: DatabaseReference
-    private lateinit var vTypeTxt: String
+    private lateinit var touristTxt: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -54,11 +54,11 @@ class TouristRegisterActivity : AppCompatActivity() {
                     touristUsername.text.toString(),
                     touristContactNumber.text.toString(),
                     touristBirthCountry.text.toString(),
-                    touristgenderTxt,
+                    touristTxt,
                     touristPassword.text.toString()
                 )
 
-                databaseReference.child(touristUsername.text.toString()).setValue(tourist)
+                databaseReference.child(touristUsername.text.toString()).setValue(Tourists)
                     .addOnSuccessListener {
                         Toast.makeText(this, "Successfully Register", Toast.LENGTH_SHORT).show()
                     }.addOnFailureListener {

@@ -24,11 +24,15 @@ class TouristLoginActivity : AppCompatActivity() {
         var registertourist = findViewById<EditText>(R.id.touristuserName)
         var password = findViewById<EditText>(R.id.touristpassWord)
 
-        val btntouristlogin_ = findViewById<Button>(R.id.btntouristlogin)
+        val btntouristlogin = findViewById<Button>(R.id.btntouristlogin)
         btntouristlogin.setOnClickListener {
             /*Toast.makeText(this, "Transport Selected", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, TransportMainActivity::class.java)
             startActivity(intent)*/
+
+            val intent = Intent(this, TouristMainActivity::class.java)
+
+            startActivity(intent)
 
             databaseReference = FirebaseDatabase.getInstance().getReference("tourist")
             databaseReference.child(registertourist.text.toString()).get().addOnSuccessListener {

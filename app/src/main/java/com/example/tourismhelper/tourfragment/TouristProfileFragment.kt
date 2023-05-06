@@ -27,13 +27,18 @@ class TouristProfileFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_tourist_profile, container, false)
 
-        val logtour = arguments?.getString("logtour")
+        val btnUpdate = view.findViewById<Button>(R.id.btnUpdateProf)
+        btnUpdate.setOnClickListener {
+            parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTourist,TouristProfileUpdateFragment()).commit()
+        }
 
-        var tourfirstname = view.findViewById<TextView>(R.id.tourname11)
-        var tourlastname = view.findViewById<TextView>(R.id.tourlast12)
-        var touremail = view.findViewById<TextView>(R.id.tourmail13)
-        var tourcontact = view.findViewById<TextView>(R.id.tournum14)
-        var tourcountry = view.findViewById<TextView>(R.id.tourcountry15)
+        /*val logtour = arguments?.getString("logtour")
+
+        var tourfirstname = view.findViewById<TextView>(R.id.textView11)
+        var tourlastname = view.findViewById<TextView>(R.id.textView12)
+        var touremail = view.findViewById<TextView>(R.id.textView13)
+        var tourcontact = view.findViewById<TextView>(R.id.textView14)
+        var tourcountry = view.findViewById<TextView>(R.id.textView15)
 
         databaseReference = FirebaseDatabase.getInstance().getReference("tourist")
         databaseReference.child(logtour.toString()).get().addOnSuccessListener {
@@ -55,7 +60,9 @@ class TouristProfileFragment : Fragment() {
             else{
                 Toast.makeText(context, "User Does Not Exist", Toast.LENGTH_SHORT).show()
             }
-        }
+        }*/
+
+
 
         return  view
 

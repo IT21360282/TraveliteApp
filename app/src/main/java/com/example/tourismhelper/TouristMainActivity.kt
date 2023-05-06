@@ -19,7 +19,7 @@ class TouristMainActivity : AppCompatActivity() {
         val logtourBundle = Bundle()
         logtourBundle.putString("logtour",logtour)
 
-        loadFragment(TouristHomeFragment(),logtourBundle)
+        loadFragment(TouristHomeFragment())
         supportActionBar?.setTitle("Transport Home")
 
         var TouristBtnNav = findViewById<BottomNavigationView>(R.id.TouristBtnNav)

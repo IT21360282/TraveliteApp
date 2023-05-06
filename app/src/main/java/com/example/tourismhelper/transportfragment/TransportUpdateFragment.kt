@@ -7,13 +7,15 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.tourismhelper.R
 
-class TransportProvidersMoreFragment : Fragment() {
+class TransportUpdateFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_transport_providers_more, container, false)
+        return inflater.inflate(R.layout.fragment_transport_update, container, false)
+
+
     }
 }

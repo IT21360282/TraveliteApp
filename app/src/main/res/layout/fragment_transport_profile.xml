@@ -19,7 +19,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="100dp"
                 android:orientation="horizontal"
                 android:background="@color/main_color">
 
@@ -27,7 +27,7 @@
                     android:id="@+id/textView_profileName_Transport"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Dhanu Transports"
+                    android:text="Profile"
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textAlignment="center"
@@ -36,22 +36,45 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="100dp"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="@color/main_color"
-
                 android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/button_providerDeactivate_Transport"
+                    android:layout_width="186dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_edit_text"
+                    android:text="Deactivate Profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main_color"
+                    android:textSize="16sp" />
 
-
-
+                <Button
+                    android:id="@+id/button_providerUpdate_Transport"
+                    android:layout_width="184dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_edit_text"
+                    android:text="Update Profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main_color"
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Owner Name:"
+                android:text="Transport Name:"
                 android:textColor="@color/main_color"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
@@ -61,7 +84,7 @@
                 android:id="@+id/textView_profileOwnername_Transport"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Jayathilaka D.V.G."
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
@@ -74,14 +97,14 @@
                 android:text="Owner NIC:"
                 android:textColor="@color/main_color"
                 android:textSize="20sp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp" />
 
             <TextView
                 android:id="@+id/textView_profileOwnerNIC_Transport"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="200202502117"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
@@ -94,14 +117,14 @@
                 android:text="Contact Number:"
                 android:textColor="@color/main_color"
                 android:textSize="20sp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp" />
 
             <TextView
                 android:id="@+id/textView_profileOwnerContact_Transport"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="+94718654676"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
@@ -114,14 +137,14 @@
                 android:text="Vehicle Registration Number:"
                 android:textColor="@color/main_color"
                 android:textSize="20sp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp" />
 
             <TextView
                 android:id="@+id/textView_profileOwnerReg_Transport"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CAX 0234"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
@@ -134,14 +157,14 @@
                 android:text="Vehicle Type:"
                 android:textColor="@color/main_color"
                 android:textSize="20sp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"/>
 
             <TextView
                 android:id="@+id/textView_profileOwnerType_Transport"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Car"
+                android:text=""
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"

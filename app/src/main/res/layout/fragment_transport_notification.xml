@@ -19,7 +19,7 @@
 
             <LinearLayout
                 android:layout_width="350dp"
-                android:layout_height="122dp"
+                android:layout_height="170dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
@@ -30,13 +30,128 @@
                 <TextView
                     android:id="@+id/textView_notification_Transport"
                     android:layout_width="match_parent"
-                    android:layout_height="127dp"
-                    android:text="Booking! xxxx has booked you in 15/04/2023 to go to Nuwara Eliya. Start from Main Street Malabe, Colombo..."
+                    android:layout_height="87dp"
+                    android:text="Booking! Navinda Heshan has booked you in 15/05/2023 to go to Galle. Start from 219/1, Vaga road, Kosgama..."
                     android:textAlignment="center"
                     android:textColor="@color/teal_700"
                     android:textSize="20sp"
                     android:textStyle="italic"
                     android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/button_cancelbooking_Transport"
+                    android:layout_width="225dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="@color/main_color"
+                    android:text="Cancel Booking"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/styles_linear_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_notification_Transport2"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:text="Booking! Geeshan Thisera has booked you in 20/05/2023 to go to Nuwara Eliya. Start from Pittugala Road, Malabe..."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/button_cancelbooking_Transport1"
+                    android:layout_width="225dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="@color/main_color"
+                    android:text="Cancel Booking"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/styles_linear_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_notification_Transport3"
+                    android:layout_width="match_parent"
+                    android:layout_height="87dp"
+                    android:text="Booking! Nethmi Tharushi has booked you in 25/05/2023 to go to Ella. Start from Main Street Malabe, Colombo..."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/button_cancelbooking_Transport2"
+                    android:layout_width="225dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="@color/main_color"
+                    android:text="Cancel Booking"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="175dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/styles_linear_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_notification_Transport4"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:text="Booking! Thisula Jayathilaka has booked you in 02/06/2023 to go to Anuradhapura . Start from Kanampella, Kosgama..."
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+
+                <Button
+                    android:id="@+id/button_cancelbooking_Transport3"
+                    android:layout_width="225dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="@color/main_color"
+                    android:text="Cancel Booking"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             </LinearLayout>

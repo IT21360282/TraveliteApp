@@ -34,9 +34,11 @@ class TransportLoginActivity : AppCompatActivity() {
             databaseReference.child(vLoginRegNum.text.toString()).get().addOnSuccessListener {
                 if(it.exists()){
                     var passwordFromDB = it.child("password").value.toString()
+                    var regNumFromDB = it.child("vregNum").value.toString()
                     if(password.text.toString() == passwordFromDB){
                         Toast.makeText(this, "Logged In Successfully", Toast.LENGTH_SHORT).show()
                         val intent = Intent(this, TransportMainActivity::class.java)
+                        intent.putExtra("regNum", regNumFromDB)
                         startActivity(intent)
                         vLoginRegNum.text.clear()
                         password.text.clear()

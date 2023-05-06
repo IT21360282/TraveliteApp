@@ -39,7 +39,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
             android:ems="10"
-            android:hint="Transport Name"
+            android:hint="Vehicle Owner Name"
             android:inputType="textPersonName"
             android:textSize="15sp"
             android:background="@drawable/styles_edit_text"
@@ -132,52 +132,8 @@
         </LinearLayout>
 
 
-
-
-        <EditText
-            android:id="@+id/vehicleOwnerPassword_Transport"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="30dp"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:background="@drawable/styles_edit_text"
-            android:paddingLeft="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            />
-
-        <EditText
-            android:id="@+id/vehicleOwnerRetypePassword_Transport"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="30dp"
-            android:ems="10"
-            android:hint="Retype Password"
-            android:inputType="textPassword"
-            android:background="@drawable/styles_edit_text"
-            android:paddingLeft="10dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            />
-
-        <CheckBox
-            android:id="@+id/vehicleOwnerAgreement_Transport"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="30dp"
-            android:text="I agree to the terms and conditions."
-             />
-
         <Button
-            android:id="@+id/register2Button_Transport"
+            android:id="@+id/register2Button_Transport_Update"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
@@ -185,7 +141,7 @@
             android:layout_marginBottom="15dp"
             android:layout_marginRight="40dp"
             android:background="@drawable/round_corner"
-            android:text="REGISTER"
+            android:text="UPDATE"
             android:textColor="@color/white"
             app:backgroundTint="@color/main_color" />
 

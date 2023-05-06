@@ -12,22 +12,34 @@ class TransportMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_transport_main)
         supportActionBar?.setDisplayHomeAsUpEnabled(false)
-        loadFragment(TransportHomeFragment())
+
+        val regNum = intent.getStringExtra("regNum").toString()
+
+        val regNumBundle = Bundle()
+        regNumBundle.putString("regNum",regNum)
+
+        loadFragment(TransportHomeFragment(),regNumBundle)
         supportActionBar?.setTitle("Transport Home")
+
+
 
         var transportBottomNav = findViewById<BottomNavigationView>(R.id.transportBottomNav)
         transportBottomNav.setOnItemSelectedListener { item->
             when(item.itemId){
                 R.id.transportNavHome ->{
-                    loadFragment(TransportHomeFragment())
+                    loadFragment(TransportHomeFragment(), regNumBundle)
                     supportActionBar?.setTitle("Transport Home")
                     true
                 }R.id.transportNavHistory ->{
-                    loadFragment(TransportHistoryFragment())
+                    loadFragment(TransportHistoryFragment(), regNumBundle)
                     supportActionBar?.setTitle("Transport Booking History")
                     true
+                }R.id.transportNavNotification ->{
+                loadFragment(TransportNotificationFragment(), regNumBundle)
+                supportActionBar?.setTitle("Transport Booking Notifications")
+                true
                 }R.id.transportNavProfile ->{
-                    loadFragment(TransportProfileFragment())
+                    loadFragment(TransportProfileFragment(), regNumBundle)
                     supportActionBar?.setTitle("Transport Provider Owner Profile")
                     true
                 }
@@ -36,7 +48,8 @@ class TransportMainActivity : AppCompatActivity() {
         }
 
     }
-    private fun loadFragment(fragment: Fragment){
+    private fun loadFragment(fragment: Fragment, bundle: Bundle){
+        fragment.arguments = bundle
         supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerTransport,fragment).commit()
 }
 }

@@ -11,6 +11,15 @@ class TouristMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tourist_main)
+        supportActionBar?.setDisplayHomeAsUpEnabled(false)
+
+        val logtour = intent.getStringExtra("logtour").toString()
+
+        val logtourBundle = Bundle()
+        logtourBundle.putString("logtour",logtour)
+
+        loadFragment(TouristHomeFragment(),logtourBundle)
+        supportActionBar?.setTitle("Transport Home")
 
         var TouristBtnNav = findViewById<BottomNavigationView>(R.id.TouristBtnNav)
         TouristBtnNav.setOnItemSelectedListener { item->

@@ -30,7 +30,7 @@
                         android:id="@+id/imageView11"
                         android:layout_width="195dp"
                         android:layout_height="wrap_content"
-                        tools:src="@drawable/maligawa"
+                        tools:src="@drawable/Maligawa"
                         android:layout_marginTop="10dp"/>
 
                     <TextView
@@ -131,7 +131,7 @@
                     android:layout_marginTop="30dp"
                     android:layout_marginRight="40dp"
                     android:background="@drawable/round_corner"
-                    android:text="Confirm"
+                    android:text="Back"
                     android:backgroundTint="@color/main_color" />
 
                 <Button

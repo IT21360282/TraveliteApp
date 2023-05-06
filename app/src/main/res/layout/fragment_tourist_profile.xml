@@ -49,7 +49,7 @@
         android:background="@drawable/styles_linear_layout">
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/tourname11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -60,7 +60,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/tourlast12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -71,7 +71,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/tourmail13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -82,7 +82,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/tournum14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -93,7 +93,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/tourcountry15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"

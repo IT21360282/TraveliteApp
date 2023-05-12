@@ -21,12 +21,16 @@ class TransportProfileFragment : Fragment() {
 
     private lateinit var databaseReference: DatabaseReference
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_transport_profile, container, false)
+
+
 
         val regNum = arguments?.getString("regNum")
 
@@ -58,12 +62,17 @@ class TransportProfileFragment : Fragment() {
             }
         }
 
+        val button_providerDeactivate_Transport = view.findViewById<Button>(R.id.button_providerDeactivate_Transport)
+        button_providerDeactivate_Transport.setOnClickListener {
+            Toast.makeText(context , "Transport  Update", Toast.LENGTH_SHORT).show()
+            parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTransport,TransportProfileFragment()).commit()
+        }
+
         val button_providerUpdate_Transport = view.findViewById<Button>(R.id.button_providerUpdate_Transport)
         button_providerUpdate_Transport.setOnClickListener {
             Toast.makeText(context , "Transport  Update", Toast.LENGTH_SHORT).show()
             parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTransport,TransportUpdateFragment()).commit()
         }
-
         return  view
     }
 

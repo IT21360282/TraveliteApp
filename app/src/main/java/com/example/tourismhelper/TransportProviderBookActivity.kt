@@ -31,26 +31,32 @@ class TransportProviderBookActivity : AppCompatActivity() {
         transportBookSumbitBtn.setOnClickListener {
 
             if(touristTransportName.text.toString().isNotEmpty()) {
-                databaseReference =
-                    FirebaseDatabase.getInstance().getReference("transport_book")
-                var transportBook = TransportBook(
-                    touristTransportName.text.toString(),
-                    touristTransportAddress.text.toString(),
-                    touristTransportContact.text.toString(),
-                    touristTransportNIC.text.toString(),
-                    touristTransportPlace.text.toString(),
-                    touristTransportDate.text.toString()
+                if (touristTransportContact.text.toString().matches(Regex("^[+]?[0-9]{10,13}\$"))) {
+                    databaseReference =
+                        FirebaseDatabase.getInstance().getReference("transport_book")
+                    var transportBook = TransportBook(
+                        touristTransportName.text.toString(),
+                        touristTransportAddress.text.toString(),
+                        touristTransportContact.text.toString(),
+                        touristTransportNIC.text.toString(),
+                        touristTransportPlace.text.toString(),
+                        touristTransportDate.text.toString()
 
-                )
+                    )
 
-                databaseReference.child(touristTransportName.text.toString()).setValue(transportBook)
-                    .addOnSuccessListener {
-                        Toast.makeText(this, "Successfully Booking", Toast.LENGTH_SHORT).show()
-                    }.addOnFailureListener {
-                        Toast.makeText(this, "Failed to Boking, Try Again", Toast.LENGTH_SHORT).show()
-                    }
-            }
-            else{
+                    databaseReference.child(touristTransportName.text.toString())
+                        .setValue(transportBook)
+                        .addOnSuccessListener {
+                            Toast.makeText(this, "Successfully Booking", Toast.LENGTH_SHORT).show()
+                        }.addOnFailureListener {
+                            Toast.makeText(this, "Failed to Boking, Try Again", Toast.LENGTH_SHORT)
+                                .show()
+                        }
+                } else {
+                    Toast.makeText(this, "Please Enter a Valid Phone Number", Toast.LENGTH_SHORT)
+                        .show()
+                }
+            }else{
                 Toast.makeText(this, "Please Enter Valid Register Number", Toast.LENGTH_SHORT).show()
             }
         }

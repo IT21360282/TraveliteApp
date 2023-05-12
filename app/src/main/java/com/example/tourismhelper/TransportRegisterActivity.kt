@@ -68,7 +68,13 @@ class TransportRegisterActivity : AppCompatActivity() {
 
     }
 }
+<<<<<<< Updated upstream
 */
+=======
+
+ */
+
+>>>>>>> Stashed changes
 
 package com.example.tourismhelper
 
@@ -115,7 +121,11 @@ class TransportRegisterActivity : AppCompatActivity() {
         transportRegSumbitBtn.setOnClickListener {
 
             if(vregNum.text.toString().isNotEmpty()) {
+<<<<<<< Updated upstream
                 if(vownerPhone.text.toString().matches(Regex("^[+]?[0-9]{10,13}\$"))) {
+=======
+                if(vownerPhone.text.toString().matches(Regex("^[+]?[0-9]{10}\$"))) {
+>>>>>>> Stashed changes
                     databaseReference =
                         FirebaseDatabase.getInstance().getReference("transport_provider")
                     var transportProvider = TransportProvider(

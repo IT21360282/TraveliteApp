@@ -10,9 +10,7 @@ import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.tourismhelper.R
-import com.example.tourismhelper.TransportMainActivity
-import com.example.tourismhelper.TransportProviderMoreActivity
+import com.example.tourismhelper.*
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -62,10 +60,13 @@ class TransportProfileFragment : Fragment() {
             }
         }
 
+
         val button_providerDeactivate_Transport = view.findViewById<Button>(R.id.button_providerDeactivate_Transport)
         button_providerDeactivate_Transport.setOnClickListener {
-            Toast.makeText(context , "Transport  Update", Toast.LENGTH_SHORT).show()
-            parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTransport,TransportProfileFragment()).commit()
+            deacticateAcc("vregNum")
+            val intent = Intent(context, TransportLoginActivity::class.java)
+            startActivity(intent)
+
         }
 
         val button_providerUpdate_Transport = view.findViewById<Button>(R.id.button_providerUpdate_Transport)
@@ -76,4 +77,11 @@ class TransportProfileFragment : Fragment() {
         return  view
     }
 
+    private fun deacticateAcc(regNum:String){
+        databaseReference = FirebaseDatabase.getInstance().getReference("transport_provider")
+        databaseReference.child(regNum.toString()).removeValue().addOnSuccessListener {
+            Toast.makeText(context, "Your Account is Deactivated", Toast.LENGTH_SHORT).show()
+        }.addOnFailureListener{
+
+        }}
 }

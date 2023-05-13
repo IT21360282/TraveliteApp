@@ -31,6 +31,7 @@ class TransportProfileFragment : Fragment() {
 
 
         val regNum = arguments?.getString("regNum")
+        val tregNum = arguments?.getString("tregNum")
 
         var tvownerName = view.findViewById<TextView>(R.id.textView_profileOwnername_Transport)
         var tvownerNIC = view.findViewById<TextView>(R.id.textView_profileOwnerNIC_Transport)
@@ -61,27 +62,51 @@ class TransportProfileFragment : Fragment() {
         }
 
 
+        // Delete Button
         val button_providerDeactivate_Transport = view.findViewById<Button>(R.id.button_providerDeactivate_Transport)
         button_providerDeactivate_Transport.setOnClickListener {
-            deacticateAcc("vregNum")
+            deacticateAccTransport("vregNum")
             val intent = Intent(context, TransportLoginActivity::class.java)
             startActivity(intent)
 
         }
 
+       /* // Update Button
         val button_providerUpdate_Transport = view.findViewById<Button>(R.id.button_providerUpdate_Transport)
         button_providerUpdate_Transport.setOnClickListener {
-            Toast.makeText(context , "Transport  Update", Toast.LENGTH_SHORT).show()
+            updateteAccTransport("vregNum")
             parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTransport,TransportUpdateFragment()).commit()
-        }
+        }*/
         return  view
     }
 
-    private fun deacticateAcc(regNum:String){
+
+    // Delete Function for Delete Transport Provider Profile
+    private fun deacticateAccTransport(regNum:String){
         databaseReference = FirebaseDatabase.getInstance().getReference("transport_provider")
         databaseReference.child(regNum.toString()).removeValue().addOnSuccessListener {
             Toast.makeText(context, "Your Account is Deactivated", Toast.LENGTH_SHORT).show()
         }.addOnFailureListener{
 
         }}
+
+    // Update Function for update Transport Provider Profile Details
+    /*private fun updateteAccTransport(tregNum:String){
+    databaseReference = FirebaseDatabase.getInstance().getReference("transport_provider")
+    val tregNum = mapOf<String,String>(
+        "vownerName" to vownerName,
+        "vownerNIC" to vownerNIC,
+        "vownerPhone" to vownerPhone,
+        "vtype" to vtype
+    )
+
+    databaseReference.child(tregNum.toString()).updateChildren(tregNum).addOnSuccessListener {
+        Toast.makeText(context, "Successfully Updated Transport Provider", Toast.LENGTH_SHORT).show()
+
+    }.addOnFailureListener{
+
+
+    }}*/
+
+
 }

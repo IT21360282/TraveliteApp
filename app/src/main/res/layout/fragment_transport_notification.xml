@@ -19,7 +19,7 @@
 
             <LinearLayout
                 android:layout_width="350dp"
-                android:layout_height="170dp"
+                android:layout_height="260dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
@@ -30,8 +30,45 @@
                 <TextView
                     android:id="@+id/textView_notification_Transport"
                     android:layout_width="match_parent"
-                    android:layout_height="87dp"
-                    android:text="Booking! Navinda Heshan has booked you in 15/05/2023 to go to Galle. Start from 219/1, Vaga road, Kosgama..."
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Booking! "
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Place"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
                     android:textAlignment="center"
                     android:textColor="@color/teal_700"
                     android:textSize="20sp"
@@ -42,7 +79,7 @@
                     android:id="@+id/button_cancelbooking_Transport"
                     android:layout_width="225dp"
                     android:layout_height="35dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="55dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/round_corner"

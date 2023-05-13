@@ -27,7 +27,7 @@ class TransportUpdateFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_transport_update, container, false)
 
-        val regNum = arguments?.getString("regNum")
+        val tregNum = arguments?.getString("tregNum")
 
         var tvownerName = view.findViewById<EditText>(R.id.vehicleOwnerName_Transport)
         var tvownerNIC = view.findViewById<EditText>(R.id.vehicleOwnerNIC_Transport)
@@ -35,7 +35,7 @@ class TransportUpdateFragment : Fragment() {
         var tvownerRegNum = view.findViewById<EditText>(R.id.vehicleRegID_Transport)
 
         databaseReference = FirebaseDatabase.getInstance().getReference("transport_provider")
-        databaseReference.child(regNum.toString()).get().addOnSuccessListener {
+        databaseReference.child(tregNum.toString()).get().addOnSuccessListener {
             if(it.exists()){
                 var ownerNameFromDB = it.child("vownerName").value.toString()
                 var ownerNICFromDB = it.child("vownerNIC").value.toString()
@@ -56,7 +56,6 @@ class TransportUpdateFragment : Fragment() {
 
         val register2Button_Transport_Update = view.findViewById<Button>(R.id.register2Button_Transport_Update)
         register2Button_Transport_Update.setOnClickListener {
-            Toast.makeText(context , "Transport  Update", Toast.LENGTH_SHORT).show()
             parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTransport,TransportProfileFragment()).commit()
         }
 
@@ -64,4 +63,6 @@ class TransportUpdateFragment : Fragment() {
 
 
     }
+
+
 }

@@ -42,7 +42,7 @@
     <LinearLayout
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="17dp"
         android:orientation="vertical"
         android:layout_gravity="center"
         android:background="@drawable/styles_linear_layout">
@@ -109,10 +109,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="80dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginRight="80dp"
         android:background="@drawable/round_corner"
         android:text="Update Profile"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/main_color" />
+
+    <Button
+        android:id="@+id/btnDeleteProf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/round_corner"
+        android:text="Deactivate"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:backgroundTint="@color/main_color" />

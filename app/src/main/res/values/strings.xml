@@ -70,6 +70,10 @@
         <item>10 Persons</item>
         <item>Other</item>
     </string-array>
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
     <string name="Restaurant_home_text">You can attract customers\nby maintaining the restaurant profile properly.\nTherefore update your restaurant profile recently\nwith new meals, combo pack, and discounts</string>
     <string name="Hotel_home_text">You can attract customers\nby maintaining the hotel profile properly.\nTherefore update your hotel profile recently\nwith new rooms, meals, and packages</string>
     <string name="large_text">

@@ -45,7 +45,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/ReviewPersonName"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -67,7 +67,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextEmailAddress"
+                android:id="@+id/ReviewEmail"
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -89,7 +89,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPostalAddress"
+                android:id="@+id/ReviewComment"
                 android:layout_width="350dp"
                 android:layout_height="95dp"
                 android:layout_marginLeft="30dp"
@@ -98,7 +98,7 @@
                 android:inputType="textPostalAddress" />
 
             <Button
-                android:id="@+id/btntouristcomment"
+                android:id="@+id/btnReviewsubmit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="160dp"

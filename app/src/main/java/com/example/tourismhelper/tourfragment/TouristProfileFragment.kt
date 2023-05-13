@@ -11,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.tourismhelper.R
+import com.example.tourismhelper.TouristLoginActivity
 import com.example.tourismhelper.TouristMainActivity
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -32,7 +33,7 @@ class TouristProfileFragment : Fragment() {
             parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTourist,TouristProfileUpdateFragment()).commit()
         }
 
-        /*val logtour = arguments?.getString("logtour")
+        val logtour = arguments?.getString("logtour")
 
         var tourfirstname = view.findViewById<TextView>(R.id.textView11)
         var tourlastname = view.findViewById<TextView>(R.id.textView12)
@@ -60,11 +61,32 @@ class TouristProfileFragment : Fragment() {
             else{
                 Toast.makeText(context, "User Does Not Exist", Toast.LENGTH_SHORT).show()
             }
-        }*/
+        }
+         val btnDeleteProf = view.findViewById<Button>(R.id.btnDeleteProf)
+        btnDeleteProf.setOnClickListener {
+            deactivateprofile("touristUsername.")
+            val intent = Intent(context,TouristLoginActivity:: class.java)
+            startActivity(intent)
+        }
+
+         val btnUpdateProf = view.findViewById<Button>(R.id.btnUpdateProf)
+        btnUpdateProf.setOnClickListener {
+            Toast.makeText(context , "Update the Tourist", Toast.LENGTH_SHORT).show()
+            parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTourist,TouristProfileUpdateFragment()).commit()
+        }
+
 
 
 
         return  view
 
+    }
+    private fun deactivateprofile(logtour : String ){
+        databaseReference = FirebaseDatabase.getInstance().getReference("tourist")
+        databaseReference.child(logtour.toString()).removeValue().addOnSuccessListener {
+            Toast.makeText(context, "Prolife Deleted Successfully", Toast.LENGTH_SHORT).show()
+        }
+            .addOnFailureListener{
+            }
     }
 }

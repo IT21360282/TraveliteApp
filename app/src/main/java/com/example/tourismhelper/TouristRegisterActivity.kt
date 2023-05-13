@@ -25,14 +25,19 @@ class TouristRegisterActivity : AppCompatActivity() {
         var touristLastname = findViewById<EditText>(R.id.touristlastname)
         var touristemail = findViewById<EditText>(R.id.touristemail)
         var touristUsername = findViewById<EditText>(R.id.touristusername)
-        var touristPassword= findViewById<EditText>(R.id.touristpassword)
+        var touristPassword = findViewById<EditText>(R.id.touristpassword)
         var touristContactNumber = findViewById<EditText>(R.id.touristcontactnumber)
         var touristBirthCountry = findViewById<EditText>(R.id.touristbirthcountry)
 
 
         var touristGender = findViewById<Spinner>(R.id.touristgender)
         touristGender.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
                 touristTxt = parent?.getItemAtPosition(position).toString()
             }
 
@@ -44,9 +49,10 @@ class TouristRegisterActivity : AppCompatActivity() {
         var touristRegSumbitBtn = findViewById<Button>(R.id.touristbtnReg1)
         touristRegSumbitBtn.setOnClickListener {
 
-            if(touristUsername.text.toString().isNotEmpty()) {
-                databaseReference =
-                    FirebaseDatabase.getInstance().getReference("tourist")
+            if (touristUsername.text.toString().isNotEmpty()) {
+                if (touristContactNumber.text.toString().matches(Regex("^[+]?[0-9]{13}\$")))
+                    databaseReference =
+                        FirebaseDatabase.getInstance().getReference("tourist")
                 var Tourists = tourist(
                     touristFirstname.text.toString(),
                     touristLastname.text.toString(),
@@ -62,14 +68,18 @@ class TouristRegisterActivity : AppCompatActivity() {
                     .addOnSuccessListener {
                         Toast.makeText(this, "Successfully Register", Toast.LENGTH_SHORT).show()
                     }.addOnFailureListener {
-                        Toast.makeText(this, "Failed to Register, Try Again", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Failed to Register, Try Again", Toast.LENGTH_SHORT)
+                            .show()
                     }
+            } else {
+                Toast.makeText(this, "This is an invalid number", Toast.LENGTH_SHORT).show()
             }
-            else{
-                Toast.makeText(this, "Please Enter Valid Register Number", Toast.LENGTH_SHORT).show()
-            }
+
+        } else {
+            Toast.makeText(this, "Please Enter Valid Register Number", Toast.LENGTH_SHORT).show()
+        }
         }
 
-    }
-}
+
+
 

@@ -27,7 +27,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/edtPackageName"
+            android:id="@+id/edtRoomName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -45,7 +45,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/edtMealDescription"
+            android:id="@+id/edtRoomDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -102,7 +102,7 @@
             android:paddingBottom="10dp">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/tvSelectConditions"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -112,25 +112,25 @@
                 android:textSize="16sp" />
 
             <CheckBox
-                android:id="@+id/cbBreakfirst"
+                android:id="@+id/cbAC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="A/C" />
 
             <CheckBox
-                android:id="@+id/cbLaunch"
+                android:id="@+id/cbFan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Fan" />
 
             <CheckBox
-                android:id="@+id/cbTeaTime"
+                android:id="@+id/cbWiFi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Wi-Fi" />
 
             <CheckBox
-                android:id="@+id/cbDinner"
+                android:id="@+id/cbTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TV" />
@@ -161,7 +161,7 @@
             android:paddingBottom="10dp">
 
             <TextView
-                android:id="@+id/tvCondition"
+                android:id="@+id/tvRoomFor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -172,7 +172,7 @@
                 android:textSize="16sp" />
 
             <Spinner
-                android:id="@+id/selectResHotel"
+                android:id="@+id/selectRoomFor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -194,7 +194,7 @@
             android:paddingBottom="10dp">
 
             <TextView
-                android:id="@+id/tvServedForPerson"
+                android:id="@+id/tvPayFor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -204,7 +204,7 @@
                 android:textSize="16sp" />
 
             <Spinner
-                android:id="@+id/selectPayHotel"
+                android:id="@+id/selectPayFor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -214,7 +214,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/edtMealPrice"
+            android:id="@+id/edtRoomPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -223,7 +223,7 @@
             android:background="@drawable/styles_edit_text"
             android:ems="10"
             android:hint="@string/room_price"
-            android:inputType="textPassword"
+            android:inputType="textPersonName"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -232,7 +232,7 @@
             android:textColorLink="@color/main_color" />
 
         <Button
-            android:id="@+id/btnSubmitMeal"
+            android:id="@+id/btnSubmitRoom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"

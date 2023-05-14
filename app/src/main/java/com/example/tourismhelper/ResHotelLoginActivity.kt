@@ -2,18 +2,18 @@ package com.example.tourismhelper
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.view.Gravity
+import android.view.View
+import android.view.ViewGroup
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.*
 import com.google.firebase.database.ktx.values
 
 class ResHotelLoginActivity : AppCompatActivity() {
+
+    private lateinit var databaseReference: DatabaseReference
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.restaurant_hotel_login)
@@ -22,15 +22,17 @@ class ResHotelLoginActivity : AppCompatActivity() {
         login?.setTitle("Restaurant/Hotel Login")
 
         var UNorEmail = findViewById<EditText>(R.id.edtLoginUNorEmail)
-        var UNorEmailText = UNorEmail.text.toString()
         var password = findViewById<EditText>(R.id.edtLoginPass)
-        var LoginToReg = findViewById<TextView>(R.id.txtViewLoginToReg)
-        var btnLogin = findViewById<Button>(R.id.btnSubmitLogin)
 
+
+
+        var btnLogin = findViewById<Button>(R.id.btnSubmitLogin)
         btnLogin.setOnClickListener{
-            Toast.makeText(this, "${UNorEmail.text.toString()}", Toast.LENGTH_SHORT).show()
+            validate(UNorEmail.text.toString(),password.text.toString())
         }
 
+
+        var LoginToReg = findViewById<TextView>(R.id.txtViewLoginToReg)
         LoginToReg.setOnClickListener {
             Toast.makeText(this, "User Registration", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, ResHotelRegisterActivity::class.java)
@@ -40,26 +42,59 @@ class ResHotelLoginActivity : AppCompatActivity() {
     }
 
     private fun validate(userTxt:String, passwordTxt:String) {
-        val database = FirebaseDatabase.getInstance().getReference("hotel_restaurant_user")
+        val overlayView = View(this)
+        overlayView.setBackgroundResource(R.drawable.popup_overlay)
+        overlayView.alpha = 1f
+        overlayView.isClickable = false
+        val container = findViewById<FrameLayout>(R.id.popupContainer)
 
-        val userId = "8HPEWixAiKVMSpVI57iV" // Replace with the key of the child node you want to retrieve.
+        val loadingPopupView = layoutInflater.inflate(R.layout.layout_loading_popup, null)
+        val loadingPopupWindow = PopupWindow(loadingPopupView,
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT)
+        loadingPopupWindow.isFocusable = true
 
-        database.child(userId).child("fullName").addListenerForSingleValueEvent(object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                val name = dataSnapshot.getValue(String::class.java)
-                if (name != null) {
-                    // Display the name in a Toast message.
-                    Toast.makeText(applicationContext, "User name: $name", Toast.LENGTH_SHORT).show()
+        container.addView(overlayView)
+        loadingPopupWindow.showAtLocation(window.decorView, Gravity.CENTER, 0, 0)
+
+        databaseReference = FirebaseDatabase.getInstance().getReference("hotel_restaurant_Owner")
+        databaseReference.child(userTxt).get().addOnSuccessListener {
+            if(it.exists()){
+                var userNameFromDB = it.child("userName").value.toString()
+                var passwordFromDB = it.child("password").value.toString()
+                var bTypeFromDB = it.child("btype").value.toString()
+                if(passwordTxt == passwordFromDB){
+                    if(bTypeFromDB == "Hotel"){
+                        Toast.makeText(this, "Logged In Successfully", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, ResHotelMainActivity::class.java)
+                        intent.putExtra("userName", userNameFromDB)
+                        startActivity(intent)
+                        finish()
+                    }
+                    else if(bTypeFromDB == "Restaurant"){
+                        Toast.makeText(this, "Logged In Successfully", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this, RestaurantMainActivity::class.java)
+                        intent.putExtra("userName", userNameFromDB)
+                        startActivity(intent)
+                        finish()
+                    }
+                    else{
+
+                    }
+                }
+                else{
+                    Toast.makeText(this, "Username or Password is Incorrect", Toast.LENGTH_SHORT).show()
                 }
             }
-
-            override fun onCancelled(error: DatabaseError) {
-                // This method will be called if there is an error reading the data from the database.
+            else{
+                Toast.makeText(this, "User Does not Exist", Toast.LENGTH_SHORT).show()
             }
-        })
+        }.addOnFailureListener{
+            Toast.makeText(this, "Failed to Get Data, Try Again", Toast.LENGTH_SHORT).show()
+        }
 
 
-
+       // loadingPopupWindow.dismiss()
         /*var un = "nilanka"
         var pass = "SN1234"
         var bType = "restaurant"

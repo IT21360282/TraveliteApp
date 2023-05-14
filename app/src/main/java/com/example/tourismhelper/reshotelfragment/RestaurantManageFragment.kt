@@ -16,21 +16,25 @@ class RestaurantManageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         var view = inflater.inflate(R.layout.fragment_restaurant_manage, container, false)
+
+        var username = arguments?.getString("userName")
+
+        var userNameBundle = Bundle()
+        userNameBundle.putString("userName", username)
+
         val btnAddMeal = view?.findViewById<Button>(R.id.addResMeal)
         btnAddMeal?.setOnClickListener {
-            val addMealFragment = HotelAddMealFragment()
+            val addMealFragment = RestaurantAddMealFragment()
+            addMealFragment.arguments = userNameBundle
             parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel, addMealFragment).commit()
         }
         val btnAddCombo = view?.findViewById<Button>(R.id.addResCombo)
         btnAddCombo?.setOnClickListener {
             val addComboPackFragmentFragment = AddComboPackFragment()
+            addComboPackFragmentFragment.arguments = userNameBundle
             parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel, addComboPackFragmentFragment).commit()
         }
-        val btnAddDiscount = view?.findViewById<Button>(R.id.addHotelPackage)
-        btnAddDiscount?.setOnClickListener {
-            val addPackageFragment = HotelAddPackageFragment()
-            parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel, addPackageFragment).commit()
-        }
+
         return view
     }
 }

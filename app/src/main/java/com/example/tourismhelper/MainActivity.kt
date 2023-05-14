@@ -28,5 +28,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btnTravel = findViewById<Button>(R.id.btnTransport)
+        btnTravel.setOnClickListener {
+            Toast.makeText(this, "Travel Provider Selected", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, TransportSelectActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

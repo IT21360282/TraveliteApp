@@ -331,13 +331,16 @@
 
             </LinearLayout>
 
+
+
+
+
             <TextView
-                android:id="@+id/tvRecentCustomers"
+                android:id="@+id/tvViewAllBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:text="Recent Customers"
-                android:textAlignment="textStart"
+                android:text="See Hotel Details"
                 android:textColor="@color/main_color"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -350,152 +353,49 @@
                 android:background="@drawable/styles_linear_layout"
                 android:orientation="vertical">
 
-                <androidx.core.widget.NestedScrollView
+                <Button
+                    android:id="@+id/btnAllRooms"
                     android:layout_width="match_parent"
-                    android:layout_height="165dp"
-                    android:fillViewport="true">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="80dp"
+                    android:background="@drawable/round_corner"
+                    android:text="All Hotel Rooms"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/main_color" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:paddingTop="15dp">
+                <Button
+                    android:id="@+id/btnAllMeals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="80dp"
+                    android:background="@drawable/round_corner"
+                    android:text="All Hotel Meals"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/main_color" />
 
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginRight="15dp"
-                            android:layout_marginBottom="15dp"
-                            android:background="@drawable/empty_button_frame"
-                            android:backgroundTint="@color/white">
-
-                            <ImageView
-                                android:id="@+id/imageView5"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:src="@drawable/pro_pic"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintVertical_bias="0.5" />
-
-                            <TextView
-                                android:id="@+id/tvTouristInHotelRes"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
-                                android:text="Customer01"
-                                android:textColor="@color/main_color"
-                                android:textSize="20sp"
-                                app:layout_constraintBottom_toTopOf="@+id/tvCountryInHotelRes"
-                                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintVertical_bias="0.5" />
-
-                            <TextView
-                                android:id="@+id/tvCountryInHotelRes"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="11-03-2023"
-                                android:textColor="@color/black"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toStartOf="@+id/tvTouristInHotelRes"
-                                app:layout_constraintTop_toBottomOf="@+id/tvTouristInHotelRes"
-                                app:layout_constraintVertical_bias="0.5" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginRight="15dp"
-                            android:layout_marginBottom="15dp"
-                            android:background="@drawable/empty_button_frame"
-                            android:backgroundTint="@color/white">
-
-                            <ImageView
-                                android:id="@+id/imageView5"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:src="@drawable/pro_pic"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintVertical_bias="0.5" />
-
-                            <TextView
-                                android:id="@+id/tvTouristInHotelRes"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
-                                android:text="Customer02"
-                                android:textColor="@color/main_color"
-                                android:textSize="20sp"
-                                app:layout_constraintBottom_toTopOf="@+id/tvCountryInHotelRes"
-                                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintVertical_bias="0.5" />
-
-                            <TextView
-                                android:id="@+id/tvCountryInHotelRes"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="04-03-2023"
-                                android:textColor="@color/black"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toStartOf="@+id/tvTouristInHotelRes"
-                                app:layout_constraintTop_toBottomOf="@+id/tvTouristInHotelRes"
-                                app:layout_constraintVertical_bias="0.5" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginRight="15dp"
-                            android:layout_marginBottom="15dp"
-                            android:background="@drawable/empty_button_frame"
-                            android:backgroundTint="@color/white">
-
-                            <ImageView
-                                android:id="@+id/imageView5"
-                                android:layout_width="60dp"
-                                android:layout_height="60dp"
-                                android:src="@drawable/pro_pic"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintVertical_bias="0.5" />
-
-                            <TextView
-                                android:id="@+id/tvTouristInHotelRes"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="20dp"
-                                android:text="TextView"
-                                android:textColor="@color/black"
-                                android:textSize="20sp"
-                                app:layout_constraintBottom_toTopOf="@+id/tvCountryInHotelRes"
-                                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                                app:layout_constraintTop_toTopOf="parent"
-                                app:layout_constraintVertical_bias="0.5" />
-
-                            <TextView
-                                android:id="@+id/tvCountryInHotelRes"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="TextView"
-                                android:textColor="@color/black"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintStart_toStartOf="@+id/tvTouristInHotelRes"
-                                app:layout_constraintTop_toBottomOf="@+id/tvTouristInHotelRes"
-                                app:layout_constraintVertical_bias="0.5" />
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-                    </LinearLayout>
-                </androidx.core.widget.NestedScrollView>
+                <Button
+                    android:id="@+id/btnAllPackages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="80dp"
+                    android:background="@drawable/round_corner"
+                    android:text="All Hotel Packages"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/main_color" />
 
             </LinearLayout>
-
             <TextView
-                android:id="@+id/tvDate"
+                android:id="@+id/tvClaender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"

@@ -33,7 +33,7 @@
         android:paddingBottom="25dp">
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/regHotelTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -135,7 +135,7 @@
                 android:textSize="16sp" />
 
             <Spinner
-                android:id="@+id/selectResHotel"
+                android:id="@+id/selectHotelStarRate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"

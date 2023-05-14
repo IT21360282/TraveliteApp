@@ -25,7 +25,7 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/edtPackageName"
+            android:id="@+id/edtComboName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -33,7 +33,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/styles_edit_text"
             android:ems="10"
-            android:hint="Package Name"
+            android:hint="Combo Pack Name"
             android:inputType="textPersonName"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
@@ -43,7 +43,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/edtMealDescription"
+            android:id="@+id/edtComboDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -110,7 +110,7 @@
                 android:textSize="16sp" />
 
             <Spinner
-                android:id="@+id/selectPayHotel"
+                android:id="@+id/selectComboServedFor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -120,7 +120,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/edtIncloodingPackageItem"
+            android:id="@+id/edtIncloodingComboItems"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -140,7 +140,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/edtFreeItem"
+            android:id="@+id/edtComboFreeItem"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -160,7 +160,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/edtMealPrice"
+            android:id="@+id/edtComboPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -178,7 +178,7 @@
             android:textColorLink="@color/main_color" />
 
         <Button
-            android:id="@+id/btnSubmitMeal"
+            android:id="@+id/btnSubmitCombo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"

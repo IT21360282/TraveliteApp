@@ -79,7 +79,7 @@
         app:backgroundTint="@color/main_color" />
 
     <Button
-        android:id="@+id/resHotelLogin"
+        android:id="@+id/btnTransport"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="90dp"

@@ -1,338 +1,343 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".reshotelfragment.ResHotelProfileFragment">
-
-    <!-- TODO: Update blank fragment layout -->
-    <LinearLayout
+    android:id="@+id/popupContainer">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/main_color"
-        android:gravity="start"
-        android:paddingLeft="20dp"
-        android:paddingTop="15dp"
-        android:paddingRight="20dp"
-        android:paddingBottom="15dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".reshotelfragment.ResHotelProfileFragment">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_view"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            app:cardCornerRadius="50dp"
-            app:cardElevation="2dp">
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color"
+            android:gravity="start"
+            android:paddingLeft="20dp"
+            android:paddingTop="15dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="15dp">
 
-            <ImageView
-                android:id="@+id/imageView"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="2dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/main_color"
+                    android:backgroundTint="@color/main_color"
+                    android:textAlignment="center"
+                    tools:src="@drawable/pro_pic" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tvBusinessNameValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/business_name_val"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/tvNameValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name_val"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/div_box"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/updateProfile"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/styles_edit_text"
+                android:text="@string/pro_up"
+                android:textAllCaps="false"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/changePassword"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="4"
+                android:background="@drawable/styles_edit_text"
+                android:text="@string/change_pass"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/div_box"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnDeactivate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/main_color"
-                android:backgroundTint="@color/main_color"
-                android:textAlignment="center"
-                tools:src="@drawable/pro_pic" />
-
-        </androidx.cardview.widget.CardView>
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/styles_edit_text"
+                android:text="Deactivate Account"
+                android:textAllCaps="false"
+                android:textColor="@color/main_color"
+                android:textSize="16sp" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingTop="20dp"
-            android:paddingBottom="15dp">
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tvBusinessNameValue"
+            <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/business_name_val"
-                android:textAlignment="textEnd"
-                android:textColor="@color/white"
-                android:textSize="30sp" />
+                android:layout_height="match_parent"
+                android:fillViewport="true">
 
-            <TextView
-                android:id="@+id/tvNameValue"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/name_val"
-                android:textAlignment="textEnd"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvOwnerDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="Owner Details"
+                        android:textColor="@color/main_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/styles_linear_layout"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="@string/prof_name"
+                            android:textColor="@color/main_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvOwnerName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="owner_name"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/prof_email"
+                            android:textColor="@color/main_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvOwnerEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="owner_email"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvContact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/prof_phone"
+                            android:textColor="@color/main_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvOwnerPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="owner_phone"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvBusinessDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:text="Business Details"
+                        android:textColor="@color/main_color"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/styles_linear_layout"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/tvType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/prof_type"
+                            android:textColor="@color/main_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvBusinessType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="bType"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvBusinessName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/prof_Business"
+                            android:textColor="@color/main_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvHotelName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="hotel_name"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvBusinessEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Business Email"
+                            android:textColor="@color/main_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvBusinessEmailVal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="tablohotel@gmail.com"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvBusinessPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="Business TelePhone No."
+                            android:textColor="@color/main_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvBusinessPhoneValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="+94112233444"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/prof_loc"
+                            android:textColor="@color/main_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvBusinessLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="location"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tvJoinedDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/prof_joined"
+                            android:textColor="@color/main_color"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tvJoinedDateValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="date"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
         </LinearLayout>
 
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/div_box"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="4"
-            android:background="@drawable/styles_edit_text"
-            android:text="@string/pro_up"
-            android:textAllCaps="false"
-            android:textColor="@color/main_color"
-            android:textSize="16sp" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="4"
-            android:background="@drawable/styles_edit_text"
-            android:text="@string/change_pass"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@color/main_color"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/div_box"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/styles_edit_text"
-            android:text="Deactivate Account"
-            android:textAllCaps="false"
-            android:textColor="@color/main_color"
-            android:textSize="16sp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fillViewport="true">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <TextView
-                    android:id="@+id/tvOwnerDetails"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:text="Owner Details"
-                    android:textColor="@color/main_color"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:background="@drawable/styles_linear_layout"
-                    android:orientation="vertical"
-                    android:padding="15dp">
-
-                    <TextView
-                        android:id="@+id/tvName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:text="@string/prof_name"
-                        android:textColor="@color/main_color"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/name_val"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tvEmail"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/prof_email"
-                        android:textColor="@color/main_color"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="nilankasanjana803@gmail.com"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tvContact"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/prof_phone"
-                        android:textColor="@color/main_color"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="+94769276950"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/tvBusinessDetails"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:text="Business Details"
-                    android:textColor="@color/main_color"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@drawable/styles_linear_layout"
-                    android:orientation="vertical"
-                    android:padding="15dp">
-
-                    <TextView
-                        android:id="@+id/tvType"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/prof_type"
-                        android:textColor="@color/main_color"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Hotel"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tvBusinessName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/prof_Business"
-                        android:textColor="@color/main_color"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/textView17"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/business_name_val"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tvBusinessEmail"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Business Email"
-                        android:textColor="@color/main_color"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/tvBusinessEmailVal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="tablohotel@gmail.com"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tvBusinessPhone"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="Business TelePhone No."
-                        android:textColor="@color/main_color"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/tvBusinessPhoneValue"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="+94112233444"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tvLocation"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/prof_loc"
-                        android:textColor="@color/main_color"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/textView18"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="No. 212/A\nMain Street\nGampaha"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-
-                    <TextView
-                        android:id="@+id/tvJoinedDate"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:text="@string/prof_joined"
-                        android:textColor="@color/main_color"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/textView19"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="2021"
-                        android:textColor="@color/black"
-                        android:textSize="20sp" />
-                </LinearLayout>
-
-            </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
-    </LinearLayout>
-
-</LinearLayout>
+</FrameLayout>

@@ -43,7 +43,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/edtMealDescription"
+            android:id="@+id/edtPackageDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -110,7 +110,7 @@
                 android:textSize="16sp" />
 
             <Spinner
-                android:id="@+id/selectPayHotel"
+                android:id="@+id/selectPackageServedFor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -140,7 +140,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/edtMealPrice"
+            android:id="@+id/edtPackagePrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -158,7 +158,7 @@
             android:textColorLink="@color/main_color" />
 
         <Button
-            android:id="@+id/btnSubmitMeal"
+            android:id="@+id/btnSubmitPackage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"

@@ -18,6 +18,27 @@
         android:theme="@style/Theme.TourismHelper"
         tools:targetApi="31">
         <activity
+             android:name=".TransportProviderBookActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TransportProviderMoreActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TransportProviderActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
 
             android:name=".TransportMainActivity"
             android:exported="false">

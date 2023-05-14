@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransportProviderActivity">
+
+    <LinearLayout
+        android:id="@+id/transport_Providers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_linear_layout"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_providerName_Transport"
+                            android:layout_width="148dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="104dp"
+                            android:text="Dhanu Travels"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/main_color"
+                            android:textSize="23dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerContact_Transport"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <Button
+                            android:id="@+id/button_providerMore_Transport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/main_color"
+                            android:text="More"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_providerContact_Transport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="98dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="+94718654676"
+                            android:textSize="17dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerPrice_Transport"
+                            app:layout_constraintEnd_toStartOf="@+id/button_providerMore_Transport"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerName_Transport"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_providerPrice_Transport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="99dp"
+                            android:layout_marginEnd="125dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="100LKR per 1KM"
+                            android:textSize="17dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerContact_Transport"
+                            app:layout_constraintVertical_bias="0.5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_linear_layout"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_providerName_Transport2"
+                            android:layout_width="160dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="104dp"
+                            android:text="Oshi Travellers"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/main_color"
+                            android:textSize="23dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerContact_Transport2"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <Button
+                            android:id="@+id/button_providerMore_Transport2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/main_color"
+                            android:text="More"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_providerContact_Transport2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="98dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="0713815240"
+                            android:textSize="17dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerPrice_Transport2"
+                            app:layout_constraintEnd_toStartOf="@+id/button_providerMore_Transport2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerName_Transport2"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_providerPrice_Transport2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="99dp"
+                            android:layout_marginEnd="125dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="80LKR per 1KM"
+                            android:textSize="17dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerContact_Transport2"
+                            app:layout_constraintVertical_bias="0.5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_linear_layout"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_providerName_Transport3"
+                            android:layout_width="148dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="104dp"
+                            android:text="Sarani Tours"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/main_color"
+                            android:textSize="23dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerContact_Transport3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <Button
+                            android:id="@+id/button_providerMore_Transport3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/main_color"
+                            android:text="More"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_providerContact_Transport3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="98dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="0771323433"
+                            android:textSize="17dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerPrice_Transport3"
+                            app:layout_constraintEnd_toStartOf="@+id/button_providerMore_Transport3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerName_Transport3"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_providerPrice_Transport3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="99dp"
+                            android:layout_marginEnd="125dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="120LKR per 1KM"
+                            android:textSize="17dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerContact_Transport3"
+                            app:layout_constraintVertical_bias="0.5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_linear_layout"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_providerName_Transport4"
+                            android:layout_width="185dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="105dp"
+                            android:text="Kasun Transports"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/main_color"
+                            android:textSize="23dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerContact_Transport4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <Button
+                            android:id="@+id/button_providerMore_Transport4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/main_color"
+                            android:text="More"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_providerContact_Transport4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="98dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="077441122"
+                            android:textSize="17dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerPrice_Transport4"
+                            app:layout_constraintEnd_toStartOf="@+id/button_providerMore_Transport4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerName_Transport4"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_providerPrice_Transport4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="99dp"
+                            android:layout_marginEnd="125dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="100LKR per 1KM"
+                            android:textSize="17dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerContact_Transport4"
+                            app:layout_constraintVertical_bias="0.5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_linear_layout"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_providerName_Transport5"
+                            android:layout_width="148dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="104dp"
+                            android:text="Geeshan Cabs"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/main_color"
+                            android:textSize="23dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerContact_Transport5"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <Button
+                            android:id="@+id/button_providerMore_Transport5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round_corner"
+                            android:backgroundTint="@color/main_color"
+                            android:text="More"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_providerContact_Transport5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="98dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="40dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="0711122334"
+                            android:textSize="17dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_providerPrice_Transport5"
+                            app:layout_constraintEnd_toStartOf="@+id/button_providerMore_Transport5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerName_Transport5"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_providerPrice_Transport5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="99dp"
+                            android:layout_marginEnd="125dp"
+                            android:layout_marginBottom="4dp"
+                            android:text="90LKR per 1KM"
+                            android:textSize="17dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_providerContact_Transport5"
+                            app:layout_constraintVertical_bias="0.5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

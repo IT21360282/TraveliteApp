@@ -43,53 +43,356 @@
                             android:id="@+id/textView_historyName_Transport"
                             android:layout_width="148dp"
                             android:layout_height="28dp"
-                            android:text="To Kandy"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Kandy"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_historyKM_Transport"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_historyLogo_Transport"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="Kasun Pradeep"
                             android:textAlignment="viewStart"
                             android:textColor="@color/main_color"
                             android:textSize="20dp"
-                            app:layout_constraintBottom_toTopOf="@+id/textView_historyKM_Transport"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.5"
-                            tools:layout_editor_absoluteX="98dp" />
-
-                        <ImageView
-                            android:id="@+id/imageView_historyLogo_Transport"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_marginStart="10dp"
-                            android:layout_weight="1"
                             app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView_historyKM_Transport"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.5"
-                            tools:src="@drawable/travelite_logo" />
+                            app:layout_constraintVertical_bias="0.5" />
 
 
                         <TextView
                             android:id="@+id/textView_historyKM_Transport"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
                             android:text="450KM"
                             app:layout_constraintBottom_toTopOf="@+id/textView_historyLKR_Transport"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport"
                             app:layout_constraintTop_toBottomOf="@+id/textView_historyName_Transport"
-                            app:layout_constraintVertical_bias="0.5"
-                            tools:layout_editor_absoluteX="98dp" />
+                            app:layout_constraintVertical_bias="0.5" />
 
                         <TextView
                             android:id="@+id/textView_historyLKR_Transport"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
                             android:text="12000LKR"
                             app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport"
                             app:layout_constraintTop_toBottomOf="@+id/textView_historyKM_Transport"
-                            app:layout_constraintVertical_bias="0.5"
-                            tools:layout_editor_absoluteX="98dp" />
+                            app:layout_constraintVertical_bias="0.5" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_linear_layout"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_historyName_Transport2"
+                            android:layout_width="148dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Polonnaruwa"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_historyKM_Transport2"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport2"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_historyLogo_Transport2"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="Shehan Nirmal"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/main_color"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView_historyKM_Transport2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
 
 
+                        <TextView
+                            android:id="@+id/textView_historyKM_Transport2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="550KM"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_historyLKR_Transport2"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport2"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_historyName_Transport2"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_historyLKR_Transport2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="16000LKR"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport2"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_historyKM_Transport2"
+                            app:layout_constraintVertical_bias="0.5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_linear_layout"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_historyName_Transport3"
+                            android:layout_width="148dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Unawatuna"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_historyKM_Transport3"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport3"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_historyLogo_Transport3"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="Shenali Kavisha"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/main_color"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView_historyKM_Transport3"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+
+                        <TextView
+                            android:id="@+id/textView_historyKM_Transport3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="200KM"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_historyLKR_Transport3"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport3"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_historyName_Transport3"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_historyLKR_Transport3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="8000LKR"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport3"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_historyKM_Transport3"
+                            app:layout_constraintVertical_bias="0.5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_linear_layout"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_historyName_Transport4"
+                            android:layout_width="148dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Katharagama"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_historyKM_Transport4"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport4"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_historyLogo_Transport4"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="Tharindu Gayan"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/main_color"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView_historyKM_Transport4"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+
+                        <TextView
+                            android:id="@+id/textView_historyKM_Transport4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="550KM"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_historyLKR_Transport4"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport4"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_historyName_Transport4"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_historyLKR_Transport4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="20000LKR"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport4"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_historyKM_Transport4"
+                            app:layout_constraintVertical_bias="0.5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="350dp"
+                    android:layout_height="118dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/styles_linear_layout"
+                    android:orientation="vertical"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textView_historyName_Transport5"
+                            android:layout_width="148dp"
+                            android:layout_height="28dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Sigiriya"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_historyKM_Transport5"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport5"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_historyLogo_Transport5"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="1"
+                            android:text="Hiruni Sureka"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/main_color"
+                            android:textSize="20dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView_historyKM_Transport5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.5" />
+
+
+                        <TextView
+                            android:id="@+id/textView_historyKM_Transport5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="300KM"
+                            app:layout_constraintBottom_toTopOf="@+id/textView_historyLKR_Transport5"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport5"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_historyName_Transport5"
+                            app:layout_constraintVertical_bias="0.5" />
+
+                        <TextView
+                            android:id="@+id/textView_historyLKR_Transport5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="10000LKR"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView_historyLogo_Transport5"
+                            app:layout_constraintTop_toBottomOf="@+id/textView_historyKM_Transport5"
+                            app:layout_constraintVertical_bias="0.5" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
                 </LinearLayout>
 
 

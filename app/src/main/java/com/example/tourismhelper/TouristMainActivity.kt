@@ -11,26 +11,39 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 class TouristMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_res_hotel_main)
+        setContentView(R.layout.activity_tourist_main)
+        supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
-        var resHotelBottomNav = findViewById<BottomNavigationView>(R.id.TouristBtnNav)
-        resHotelBottomNav.setOnItemSelectedListener { item->
+
+        val logtour = intent.getStringExtra("logtour").toString()
+
+        val logtourBundle = Bundle()
+        logtourBundle.putString("logtour",logtour)
+
+        loadFragment(TouristHomeFragment(), logtourBundle)
+        supportActionBar?.setTitle("Transport Home")
+
+        var TouristBtnNav = findViewById<BottomNavigationView>(R.id.TouristBtnNav)
+        TouristBtnNav.setOnItemSelectedListener { item->
+
             when(item.itemId){
                 R.id.tournavHome ->{
-                    loadFragment(TouristHomeFragment())
+                    loadFragment(TouristHomeFragment(), logtourBundle)
                      true
                 }R.id.tournavHistory->{
-                loadFragment(TouristHistoryFragment())
+                loadFragment(TouristHistoryFragment(), logtourBundle)
                  true
             }R.id.tournavProfile ->{
-                loadFragment(TouristProfileFragment())
+                loadFragment(TouristProfileFragment(), logtourBundle)
                  true
             }
                 else->false
             }
         }
+
     }
-    private fun loadFragment(fragment: Fragment){
-        supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel,fragment).commit()
+    private fun loadFragment(fragment: Fragment, bandle: Bundle){
+        fragment.arguments = bandle
+        supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerTourist,fragment).commit()
     }
 }

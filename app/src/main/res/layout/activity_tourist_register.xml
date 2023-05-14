@@ -27,7 +27,7 @@
         android:background="@drawable/styles_linear_layout">
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/touristfirstname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -39,7 +39,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/touristlastname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -51,7 +51,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/touristemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -63,7 +63,7 @@
         android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/touristusername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -72,11 +72,10 @@
             android:ems="10"
             android:hint="Username"
             android:inputType="textPersonName"
-            android:text="Username"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/touristpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -89,7 +88,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/touristconfirmpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -101,7 +100,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextNumber"
+            android:id="@+id/touristcontactnumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -113,7 +112,7 @@
             android:textStyle="bold" />
 
         <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/touristbirthcountry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
@@ -133,18 +132,18 @@
             android:layout_marginRight="50dp"
             android:text="Gender"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="20sp" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp" />
+        <Spinner
+            android:id="@+id/touristgender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:entries="@array/Gender" />
 
         <Button
-            android:id="@+id/btnReg1"
+            android:id="@+id/touristbtnReg1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
@@ -158,20 +157,7 @@
             android:textStyle="bold"
             app:backgroundTint="@color/main_color" />
 
-        <Button
-            android:id="@+id/btncanc1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/round_corner"
-            android:inputType="textCapWords"
-            android:text="Cancel"
-            android:textColor="@color/div_box"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:backgroundTint="@color/main_color" />
+
 
 </LinearLayout>
 </LinearLayout>

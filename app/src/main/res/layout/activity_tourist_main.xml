@@ -8,7 +8,7 @@
     tools:context=".TouristMainActivity">
 
     <FrameLayout
-        android:id="@+id/fragmentContainerResHotel"
+        android:id="@+id/fragmentContainerTourist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/TouristBtnNav">

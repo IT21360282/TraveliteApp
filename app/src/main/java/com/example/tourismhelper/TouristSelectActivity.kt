@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.Toast
 import com.example.tourismhelper.tourfragment.TouristHomeFragment
 import com.example.tourismhelper.tourfragment.TouristLocationFragment
-import com.example.tourismhelper.tourfragment.TouristReviewFragment
+
 
 class TouristSelectActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

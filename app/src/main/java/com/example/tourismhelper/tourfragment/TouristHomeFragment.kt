@@ -24,7 +24,7 @@ class TouristHomeFragment : Fragment() {
 
         val btnReview = view.findViewById<Button>(R.id.touristhomebutton1)
         btnReview.setOnClickListener {
-            parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTourist,TouristReviewFragment()).commit()
+            //parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTourist,TouristReviewFragment()).commit()
         }
 
         val btnLoc = view.findViewById<Button>(R.id.touridthomebutton3)

@@ -134,12 +134,13 @@
             android:textColor="@color/black"
             android:textSize="20sp" />
 
-    <Spinner
-        android:id="@+id/touristgender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp" />
+        <Spinner
+            android:id="@+id/touristgender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:entries="@array/Gender" />
 
         <Button
             android:id="@+id/touristbtnReg1"

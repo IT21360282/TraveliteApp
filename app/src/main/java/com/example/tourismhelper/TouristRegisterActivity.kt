@@ -50,35 +50,41 @@ class TouristRegisterActivity : AppCompatActivity() {
         touristRegSumbitBtn.setOnClickListener {
 
             if (touristUsername.text.toString().isNotEmpty()) {
-                if (touristContactNumber.text.toString().matches(Regex("^[+]?[0-9]{13}\$")))
-                    databaseReference =
-                        FirebaseDatabase.getInstance().getReference("tourist")
-                var Tourists = tourist(
-                    touristFirstname.text.toString(),
-                    touristLastname.text.toString(),
-                    touristemail.text.toString(),
-                    touristUsername.text.toString(),
-                    touristContactNumber.text.toString(),
-                    touristBirthCountry.text.toString(),
-                    touristTxt,
-                    touristPassword.text.toString()
-                )
+                if (touristContactNumber.text.toString().matches(Regex("^[0-9]{13}\$"))) {
+                    databaseReference = FirebaseDatabase.getInstance().getReference("tourist")
+                    var Tourists = tourist(
+                        touristFirstname.text.toString(),
+                        touristLastname.text.toString(),
+                        touristemail.text.toString(),
+                        touristUsername.text.toString(),
+                        touristContactNumber.text.toString(),
+                        touristBirthCountry.text.toString(),
+                        touristTxt,
+                        touristPassword.text.toString()
+                    )
 
-                databaseReference.child(touristUsername.text.toString()).setValue(Tourists)
-                    .addOnSuccessListener {
-                        Toast.makeText(this, "Successfully Register", Toast.LENGTH_SHORT).show()
-                    }.addOnFailureListener {
-                        Toast.makeText(this, "Failed to Register, Try Again", Toast.LENGTH_SHORT)
-                            .show()
-                    }
+                    databaseReference.child(touristUsername.text.toString()).setValue(Tourists)
+                        .addOnSuccessListener {
+                            Toast.makeText(this, "Successfully Register", Toast.LENGTH_SHORT).show()
+                        }.addOnFailureListener {
+                            Toast.makeText(
+                                this,
+                                "Failed to Register, Try Again",
+                                Toast.LENGTH_SHORT
+                            )
+                                .show()
+                        }
+                } else {
+                    Toast.makeText(this, "This is an invalid number", Toast.LENGTH_SHORT).show()
+                }
+
             } else {
-                Toast.makeText(this, "This is an invalid number", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Please Enter Valid Register Number", Toast.LENGTH_SHORT)
+                    .show()
             }
-
-        } else {
-            Toast.makeText(this, "Please Enter Valid Register Number", Toast.LENGTH_SHORT).show()
         }
-        }
+    }
+}
 
 
 

@@ -19,20 +19,20 @@ class TouristMainActivity : AppCompatActivity() {
         val logtourBundle = Bundle()
         logtourBundle.putString("logtour",logtour)
 
-        loadFragment(TouristHomeFragment())
+        loadFragment(TouristHomeFragment(), logtourBundle)
         supportActionBar?.setTitle("Transport Home")
 
         var TouristBtnNav = findViewById<BottomNavigationView>(R.id.TouristBtnNav)
         TouristBtnNav.setOnItemSelectedListener { item->
             when(item.itemId){
                 R.id.tournavHome ->{
-                    loadFragment(TouristHomeFragment())
+                    loadFragment(TouristHomeFragment(), logtourBundle)
                      true
                 }R.id.tournavHistory->{
-                loadFragment(TouristHistoryFragment())
+                loadFragment(TouristHistoryFragment(), logtourBundle)
                  true
             }R.id.tournavProfile ->{
-                loadFragment(TouristProfileFragment())
+                loadFragment(TouristProfileFragment(), logtourBundle)
                  true
             }
                 else->false
@@ -40,7 +40,8 @@ class TouristMainActivity : AppCompatActivity() {
         }
 
     }
-    private fun loadFragment(fragment: Fragment){
+    private fun loadFragment(fragment: Fragment, bandle: Bundle){
+        fragment.arguments = bandle
         supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerTourist,fragment).commit()
     }
 }

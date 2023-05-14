@@ -82,7 +82,15 @@ class HotelPackageDisplayFragment : Fragment() {
                     btnUpdate.layoutParams = btnLayoutParams
 
                     btnUpdate.setOnClickListener{
-                        Toast.makeText(context, "Update Button of ${pack!!.packageName}", Toast.LENGTH_SHORT).show()
+
+                        var userNameBundle = Bundle()
+                        userNameBundle.putString("userName", username)
+                        userNameBundle.putString("packageID", pack?.packageName.toString().replace(" ",""))
+
+                        val updateRoomFragment = HotelRoomUpdateFragment()
+                        updateRoomFragment.arguments = userNameBundle
+                        parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel, updateRoomFragment).commit()
+
                     }
 
                     /*val btnDelete = Button(context)

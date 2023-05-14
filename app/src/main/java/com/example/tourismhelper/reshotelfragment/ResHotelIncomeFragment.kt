@@ -14,6 +14,7 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.tourismhelper.HotelProfileViewActivity
 import com.example.tourismhelper.R
+import com.example.tourismhelper.ResHotelDisplayListActivity
 import com.example.tourismhelper.ResHotelMainActivity
 
 // TODO: Rename parameter arguments, choose names that match
@@ -81,7 +82,7 @@ class ResHotelIncomeFragment : Fragment() {
 
         val btnViewYourHotelProfile = view.findViewById<Button>(R.id.viewYourHotelProfileBtn)
         btnViewYourHotelProfile.setOnClickListener{
-            val intent = Intent(context, HotelProfileViewActivity::class.java)
+            val intent = Intent(context, ResHotelDisplayListActivity::class.java)
             intent.putExtra("userName", username)
             startActivity(intent)
         }

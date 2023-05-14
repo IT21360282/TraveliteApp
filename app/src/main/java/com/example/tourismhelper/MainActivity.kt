@@ -28,9 +28,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
         val btnTransport = findViewById<Button>(R.id.btnTransport)
         btnTransport.setOnClickListener {
             Toast.makeText(this, "Transport Selected", Toast.LENGTH_SHORT).show()
+
             val intent = Intent(this, TransportSelectActivity::class.java)
             startActivity(intent)
         }

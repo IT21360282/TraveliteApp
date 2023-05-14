@@ -1,11 +1,17 @@
 package com.example.tourismhelper.reshotelfragment
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.*
 import com.example.tourismhelper.R
+import com.example.tourismhelper.ResHotelLoginActivity
+import com.example.tourismhelper.database.HotelRoomData
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -30,6 +36,10 @@ class HotelAddRoomFragment : Fragment() {
         }
     }
 
+    private lateinit var databaseReferenceRoom: DatabaseReference
+    private lateinit var roomForTxt: String
+    private lateinit var roomPayForTxt: String
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -37,6 +47,93 @@ class HotelAddRoomFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_hotel_add_room, container, false)
         activity?.title ="Add New Room"
+
+        var username = arguments?.getString("userName")
+
+        var roomName = view.findViewById<EditText>(R.id.edtRoomName)
+        var roomDescription = view.findViewById<EditText>(R.id.edtRoomDescription)
+
+        var roomFor = view.findViewById<Spinner>(R.id.selectRoomFor)
+        roomFor.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                roomForTxt = parent?.getItemAtPosition(position).toString()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+
+            }
+        }
+
+        var roomPayFor = view.findViewById<Spinner>(R.id.selectPayFor)
+        roomPayFor.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                roomPayForTxt = parent?.getItemAtPosition(position).toString()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+
+            }
+        }
+
+        var roomPrice = view.findViewById<EditText>(R.id.edtRoomPrice)
+
+        //room conditions
+        var AC = view.findViewById<CheckBox>(R.id.cbAC)
+        var fan = view.findViewById<CheckBox>(R.id.cbFan)
+        var WiFi = view.findViewById<CheckBox>(R.id.cbWiFi)
+        var TV = view.findViewById<CheckBox>(R.id.cbTV)
+        var hotWater = view.findViewById<CheckBox>(R.id.cbHotWater)
+        var balcony = view.findViewById<CheckBox>(R.id.cbBalcony)
+
+        var btnResStartMain = view.findViewById<Button>(R.id.btnSubmitRoom)
+        btnResStartMain.setOnClickListener {
+
+            var roomID = roomName.text.toString().replace(" ","")
+
+            if(roomID.isNotEmpty()) {
+                databaseReferenceRoom =
+                    FirebaseDatabase.getInstance().getReference("hotel/$username/hotelRooms")
+                val user = HotelRoomData(
+                    roomName.text.toString(),
+                    roomDescription.text.toString(),
+                    roomForTxt,
+                    roomPayForTxt,
+                    roomPrice.text.toString(),
+                    AC.isChecked,
+                    fan.isChecked,
+                    WiFi.isChecked,
+                    TV.isChecked,
+                    hotWater.isChecked,
+                    balcony.isChecked
+                )
+                databaseReferenceRoom.child(roomID).setValue(user).addOnSuccessListener {
+                    Toast.makeText(context, "Room is Added Successfully", Toast.LENGTH_SHORT).show()
+                    roomName.text.clear()
+                    roomDescription.text.clear()
+                    roomPrice.text.clear()
+                    AC.isChecked.not()
+                    fan.isChecked.not()
+                    WiFi.isChecked.not()
+                    TV.isChecked.not()
+                    hotWater.isChecked.not()
+                    balcony.isChecked.not()
+
+                    var userNameBundle = Bundle()
+                    userNameBundle.putString("userName", username)
+
+                    val hotelIncomeFragment = ResHotelIncomeFragment()
+                    hotelIncomeFragment.arguments = userNameBundle
+                    parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel, hotelIncomeFragment).commit()
+
+                }.addOnFailureListener {
+                    Toast.makeText(context, "Failed to Add, Try Again", Toast.LENGTH_SHORT).show()
+                }
+            }
+            else{
+                Toast.makeText(context, "Enter a Valid Room Name", Toast.LENGTH_SHORT).show()
+            }
+        }
+
         return view
     }
 

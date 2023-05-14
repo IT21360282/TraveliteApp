@@ -50,7 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="70dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/styles_linear_layout"
             android:backgroundTint="@color/main_color"
@@ -81,29 +81,12 @@
             android:textColor="@color/white"
             android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/addHotelPackage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/styles_linear_layout"
-            android:backgroundTint="@color/main_color"
-            android:text="Update Discounts"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/addHotelRoom" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="70dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/styles_edit_text"
             android:orientation="vertical">

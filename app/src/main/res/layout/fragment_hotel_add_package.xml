@@ -43,7 +43,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/edtMealDescription"
+            android:id="@+id/edtPackageDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -62,31 +62,7 @@
             android:textColorHint="@color/btnBackNav"
             android:textColorLink="@color/main_color" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
-            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/baseline_image_24" />
-
-            <Button
-                android:id="@+id/btnAddMeal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
-                android:layout_weight="2"
-                android:background="@drawable/empty_button_frame"
-                android:text="Add Image"
-                android:textAllCaps="false" />
-        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -110,7 +86,7 @@
                 android:textSize="16sp" />
 
             <Spinner
-                android:id="@+id/selectPayHotel"
+                android:id="@+id/selectPackageServedFor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -140,7 +116,7 @@
             android:textColorLink="@color/main_color" />
 
         <EditText
-            android:id="@+id/edtMealPrice"
+            android:id="@+id/edtPackagePrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -158,7 +134,7 @@
             android:textColorLink="@color/main_color" />
 
         <Button
-            android:id="@+id/btnSubmitMeal"
+            android:id="@+id/btnSubmitPackage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="80dp"

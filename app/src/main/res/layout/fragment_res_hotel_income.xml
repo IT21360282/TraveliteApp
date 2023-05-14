@@ -11,75 +11,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="20dp"
-            android:layout_marginRight="50dp"
-            android:background="@drawable/styles_edit_text"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:text="LKR 0.00"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="34sp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView26"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Active Booking" />
-
-                <TextView
-                    android:id="@+id/textView27"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="0"
-                    android:textAlignment="viewEnd" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView26"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Previous Booking" />
-
-                <TextView
-                    android:id="@+id/textView27"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="0"
-                    android:textAlignment="viewEnd" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="10dp"
             android:layout_marginRight="50dp"
             android:background="@drawable/styles_edit_text"
             android:orientation="vertical">
@@ -89,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="How to look lik\n your customer side hotel profile "
+                android:text="How to look like\n your customer side hotel profile "
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
@@ -99,7 +36,7 @@
                 android:padding="20dp">
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/viewYourHotelProfileBtn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@drawable/empty_button_frame"
@@ -173,7 +110,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView22"
+                android:id="@+id/textView222"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -181,27 +118,41 @@
                 android:textAlignment="center"
                 android:textColor="@color/black" />
 
-            <LinearLayout
+
+            <Button
+                android:id="@+id/btnPickImage"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="20dp">
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/empty_button_frame"
+                android:text="Pick Images From Gallery"
+                android:textAllCaps="false"
+                android:textColor="@color/main_color" />
 
-                <ImageButton
-                    android:id="@+id/imageButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="?android:attr/windowSplashScreenBackground"
-                    android:src="@drawable/baseline_image_24" />
+            <ImageView
+                android:id="@+id/pikedImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxWidth="50dp"
+                android:maxHeight="50dp"
+                android:src="@drawable/baseline_image_24" />
 
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/empty_button_frame"
-                    android:text="Add Images"
-                    android:textAllCaps="false"
-                    android:textColor="@color/main_color" />
-            </LinearLayout>
+            <Button
+                android:id="@+id/btnUploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/empty_button_frame"
+                android:text="Add Images"
+                android:textAllCaps="false"
+                android:textColor="@color/main_color" />
         </LinearLayout>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

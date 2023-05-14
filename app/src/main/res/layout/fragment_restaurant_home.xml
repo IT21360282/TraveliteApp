@@ -333,6 +333,54 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/tvSeeAllDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="See Restaurant Details"
+                android:textAlignment="textStart"
+                android:textColor="@color/main_color"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/styles_linear_layout"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnAllMeals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="80dp"
+                    android:background="@drawable/round_corner"
+                    android:text="All Restaurant Meals"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/main_color" />
+
+                <Button
+                    android:id="@+id/btnAllCombo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="80dp"
+                    android:background="@drawable/round_corner"
+                    android:text="All Restaurant Combo"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/main_color" />
+
+            </LinearLayout>
+
+            <TextView
                 android:id="@+id/tvRecentCustomers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

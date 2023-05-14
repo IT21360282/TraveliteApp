@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".reshotelfragment.HotelAddMealFragment">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/styles_linear_layout"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Update Package Details"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edtPackageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:ems="10"
+            android:hint="Package Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/main_color"
+            android:textColorHint="@color/btnBackNav"
+            android:textColorLink="@color/main_color" />
+
+        <EditText
+            android:id="@+id/edtPackageDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:ems="10"
+            android:hint="@string/room_description"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:minLines="3"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/main_color"
+            android:textColorHint="@color/btnBackNav"
+            android:textColorLink="@color/main_color" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvServedForPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Served for"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/selectPackageServedFor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/served_person" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edtIncloodingPackageItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:ems="10"
+            android:hint="Including Items"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:minLines="3"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/main_color"
+            android:textColorHint="@color/btnBackNav"
+            android:textColorLink="@color/main_color" />
+
+        <EditText
+            android:id="@+id/edtPackagePrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/styles_edit_text"
+            android:ems="10"
+            android:hint="@string/room_price"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColorHighlight="@color/main_color"
+            android:textColorHint="@color/btnBackNav"
+            android:textColorLink="@color/main_color" />
+
+        <Button
+            android:id="@+id/btnSubmitPackage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/round_corner"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/main_color" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

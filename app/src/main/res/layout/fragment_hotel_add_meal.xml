@@ -181,7 +181,7 @@
             android:background="@drawable/styles_edit_text"
             android:ems="10"
             android:hint="@string/room_price"
-            android:inputType="textPassword"
+            android:inputType="number"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"

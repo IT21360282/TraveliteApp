@@ -80,6 +80,7 @@ class HotelMealUpdateFragment : Fragment() {
                 mealName.setText("$mealNameFromDB")
                 mealDescription.setText("$mealDescriptionFromDB")
                 mealPrice.setText("$mealPriceFromDB")
+                mealIncludingItems.setText("$mealIncludingItemsFromDB")
 
                 val adapterPayFor = ArrayAdapter.createFromResource(
                     requireContext(),
@@ -158,15 +159,22 @@ class HotelMealUpdateFragment : Fragment() {
         databaseReferenceMeal = FirebaseDatabase.getInstance().getReference("hotel/${username.toString()}/hotelMeals")
 
         databaseReferenceMeal.child(mealID.toString()).updateChildren(dataSrt).addOnSuccessListener {
-            Toast.makeText(context, "Successfully Updated", Toast.LENGTH_SHORT).show()
+
+            databaseReferenceMeal.child(mealID.toString()).updateChildren(dataBoolean).addOnSuccessListener {
+                Toast.makeText(context, "Successfully Updated", Toast.LENGTH_SHORT).show()
+
+                var userNameBundle = Bundle()
+                userNameBundle.putString("userName", username)
+
+                val allMealFragmnet = ResHotelIncomeFragment()
+                allMealFragmnet.arguments = userNameBundle
+                parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerResHotel, allMealFragmnet).commit()
 
 
-        }.addOnFailureListener {
 
-        }
-        databaseReferenceMeal.child(mealID.toString()).updateChildren(dataBoolean).addOnSuccessListener {
-            Toast.makeText(context, "Successfully Updated", Toast.LENGTH_SHORT).show()
+            }.addOnFailureListener {
 
+            }
 
         }.addOnFailureListener {
 

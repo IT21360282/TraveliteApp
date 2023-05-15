@@ -13,6 +13,7 @@ import com.example.tourismhelper.database.HotelMealData
 import com.example.tourismhelper.database.HotelRoomData
 import com.example.tourismhelper.reshotelfragment.ResHotelIncomeFragment
 import com.google.firebase.database.*
+import java.util.*
 
 class HotelProfileViewActivity : AppCompatActivity() {
 
@@ -25,6 +26,7 @@ class HotelProfileViewActivity : AppCompatActivity() {
         setContentView(R.layout.activity_hotel_profile_view)
 
         var username = intent.getStringExtra("userName")
+        var userNameTourist = intent.getStringExtra("logtour")
 
         var hotelProfImg = findViewById<ImageView>(R.id.hotelProfImg)
 
@@ -276,11 +278,14 @@ class HotelProfileViewActivity : AppCompatActivity() {
                                 val roomID = room?.roomName.toString().replace(" ","")
                                 databaseReference =
                                     FirebaseDatabase.getInstance().getReference("hotel/$username/hotelBooking")
+                                val bookingID = "${UUID.randomUUID().toString().substring(0,6)}"+"$roomID"+"$userNameTourist"
                                 val booking = HotelBooking(
-                                    "user1",
+                                    "$userNameTourist",
+                                    bookingID,
                                     room?.roomName.toString()
                                 )
-                                databaseReference.child(roomID).setValue(booking).addOnSuccessListener {
+
+                                databaseReference.child(bookingID).setValue(booking).addOnSuccessListener {
                                     Toast.makeText(popupViewNext.context, "Room is Booked Successfully", Toast.LENGTH_SHORT).show()
 
                                     container.removeView(overlayView)

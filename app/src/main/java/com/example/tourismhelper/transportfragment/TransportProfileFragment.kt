@@ -31,7 +31,7 @@ class TransportProfileFragment : Fragment() {
 
 
         val regNum = arguments?.getString("regNum")
-        val tregNum = arguments?.getString("tregNum")
+
 
         var tvownerName = view.findViewById<TextView>(R.id.textView_profileOwnername_Transport)
         var tvownerNIC = view.findViewById<TextView>(R.id.textView_profileOwnerNIC_Transport)
@@ -71,12 +71,15 @@ class TransportProfileFragment : Fragment() {
 
         }
 
-       /* // Update Button
+       // Update Button
         val button_providerUpdate_Transport = view.findViewById<Button>(R.id.button_providerUpdate_Transport)
         button_providerUpdate_Transport.setOnClickListener {
-            updateteAccTransport("vregNum")
+            //updateteAccTransport("vregNum")
+            val regNumBundle = Bundle()
+            regNumBundle.putString("regNum",regNum)
+            TransportUpdateFragment().arguments = regNumBundle
             parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTransport,TransportUpdateFragment()).commit()
-        }*/
+        }
         return  view
     }
 

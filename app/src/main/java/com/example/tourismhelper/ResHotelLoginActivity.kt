@@ -84,13 +84,19 @@ class ResHotelLoginActivity : AppCompatActivity() {
                 }
                 else{
                     Toast.makeText(this, "Username or Password is Incorrect", Toast.LENGTH_SHORT).show()
+                    container.removeView(overlayView)
+                    loadingPopupWindow.dismiss()
                 }
             }
             else{
                 Toast.makeText(this, "User Does not Exist", Toast.LENGTH_SHORT).show()
+                container.removeView(overlayView)
+                loadingPopupWindow.dismiss()
             }
         }.addOnFailureListener{
             Toast.makeText(this, "Failed to Get Data, Try Again", Toast.LENGTH_SHORT).show()
+            container.removeView(overlayView)
+            loadingPopupWindow.dismiss()
         }
 
 

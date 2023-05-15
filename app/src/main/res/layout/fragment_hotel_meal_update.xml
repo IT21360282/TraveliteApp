@@ -181,7 +181,7 @@
             android:background="@drawable/styles_edit_text"
             android:ems="10"
             android:hint="@string/room_price"
-            android:inputType="textPassword"
+            android:inputType="number"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -197,7 +197,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="80dp"
             android:background="@drawable/round_corner"
-            android:text="Submit"
+            android:text="Update"
             android:textAllCaps="false"
             android:textColor="@color/white"
             app:backgroundTint="@color/main_color" />

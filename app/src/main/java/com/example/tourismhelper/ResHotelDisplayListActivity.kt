@@ -25,7 +25,7 @@ class ResHotelDisplayListActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setTitle("Hotels in Sri Lanka")
 
-        var usernameTourist = intent.getStringExtra("tourist")
+        var usernameTourist = intent.getStringExtra("logtour")
 
         val linearLayout = findViewById<LinearLayout>(R.id.hotelList)
 
@@ -96,6 +96,7 @@ class ResHotelDisplayListActivity : AppCompatActivity() {
                     btnViewDetails.setOnClickListener {
                         var intent = Intent(this@ResHotelDisplayListActivity,HotelProfileViewActivity::class.java)
                         intent.putExtra("userName",userSnapshot.key.toString() )
+                        intent.putExtra("logtour",usernameTourist.toString() )
                         startActivity(intent)
                     }
 

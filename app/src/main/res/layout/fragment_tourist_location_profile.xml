@@ -34,7 +34,7 @@
                         android:layout_marginTop="10dp"/>
 
                     <TextView
-                        android:id="@+id/textView"
+                        android:id="@+id/nameLoc"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="30dp"
@@ -46,7 +46,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView30"
+                    android:id="@+id/descriptionLoc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -57,7 +57,7 @@
                     android:textSize="20sp" />
 
                 <TextView
-                    android:id="@+id/textView31"
+                    android:id="@+id/provinceLoc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -69,7 +69,7 @@
 
 
                 <TextView
-                    android:id="@+id/textView32"
+                    android:id="@+id/CityLoc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -80,7 +80,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView33"
+                    android:id="@+id/distanceLoc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -91,29 +91,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView34"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Function : Temple"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView35"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Started Year : 1592"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView36"
+                    android:id="@+id/addressLoc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
@@ -132,17 +110,6 @@
                     android:layout_marginRight="40dp"
                     android:background="@drawable/round_corner"
                     android:text="Back"
-                    android:backgroundTint="@color/main_color" />
-
-                <Button
-                    android:id="@+id/button14"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="40dp"
-                    android:background="@drawable/round_corner"
-                    android:text="Add to favourite list"
                     android:backgroundTint="@color/main_color" />
 
             </LinearLayout>

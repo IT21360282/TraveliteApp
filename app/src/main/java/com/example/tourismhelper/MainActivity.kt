@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         val btnTourist = findViewById<Button>(R.id.btnTourist)    
         btnTourist.setOnClickListener {
             Toast.makeText(this, "Tourist Selected", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, TransportProviderActivity::class.java)
+            val intent = Intent(this, TouristSelectActivity::class.java)
             startActivity(intent)
         }
 

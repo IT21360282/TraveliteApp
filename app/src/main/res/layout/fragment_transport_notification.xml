@@ -13,6 +13,7 @@
         android:layout_above="@+id/resHotelBottomNav">
 
         <LinearLayout
+            android:id="@+id/notification_layout_transportbook"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
@@ -28,55 +29,60 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView_notification_Transport"
+                    android:id="@+id/textView_notification_Transport1"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:layout_marginTop="10dp"
                     android:text="Booking! "
                     android:textAlignment="center"
                     android:textColor="@color/teal_700"
-                    android:textSize="20sp"
+                    android:textSize="23sp"
                     android:textStyle="italic" />
 
                 <TextView
-                    android:id="@+id/textView_notification_Transport_Name"
+                    android:id="@+id/textView_notification_Transport_Name1"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:textAlignment="center"
                     android:textColor="@color/teal_700"
-                    android:textSize="20sp"
+                    android:text="Geeshan Thisera"
+                    android:textSize="18sp"
                     android:textStyle="italic"
                     android:layout_marginTop="10dp"/>
                 <TextView
-                    android:id="@+id/textView_notification_Transport_Date"
+                    android:id="@+id/textView_notification_Transport_Date1"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:textAlignment="center"
                     android:textColor="@color/teal_700"
-                    android:textSize="20sp"
+                    android:text="Pittugala Road, Malabe"
+                    android:textSize="18sp"
                     android:textStyle="italic"
                     android:layout_marginTop="10dp"/>
                 <TextView
-                    android:id="@+id/textView_notification_Transport_Address"
+                    android:id="@+id/textView_notification_Transport_Address1"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
                     android:textAlignment="center"
                     android:textColor="@color/teal_700"
-                    android:textSize="20sp"
-                    android:textStyle="italic"
-                    android:layout_marginTop="10dp"/>
-                <TextView
-                    android:id="@+id/textView_notification_Transport_Place"
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:textAlignment="center"
-                    android:textColor="@color/teal_700"
-                    android:textSize="20sp"
+                    android:text="20.05.2023"
+                    android:textSize="18sp"
                     android:textStyle="italic"
                     android:layout_marginTop="10dp"/>
 
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Place1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Nuwara Eliya "
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
                 <Button
-                    android:id="@+id/button_cancelbooking_Transport"
+                    android:id="@+id/button_cancelbooking_Transport1"
                     android:layout_width="225dp"
                     android:layout_height="35dp"
                     android:layout_marginLeft="55dp"
@@ -88,9 +94,87 @@
                     android:textColor="@color/white" />
             </LinearLayout>
 
+
             <LinearLayout
                 android:layout_width="350dp"
-                android:layout_height="175dp"
+                android:layout_height="260dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/styles_linear_layout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_notification_Transport1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Booking! "
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="23sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Name1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:text="Hirusha Navi"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Date1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:text="Dompe Road, Gampaha"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Address1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:text="22.05.2023"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Place1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Katharagama"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <Button
+                    android:id="@+id/button_cancelbooking_Transport1.5"
+                    android:layout_width="225dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="55dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="@color/main_color"
+                    android:text="Cancel Booking"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="260dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
@@ -101,54 +185,61 @@
                 <TextView
                     android:id="@+id/textView_notification_Transport2"
                     android:layout_width="match_parent"
-                    android:layout_height="105dp"
-                    android:text="Booking! Geeshan Thisera has booked you in 20/05/2023 to go to Nuwara Eliya. Start from Pittugala Road, Malabe..."
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Booking! "
                     android:textAlignment="center"
                     android:textColor="@color/teal_700"
-                    android:textSize="20sp"
-                    android:textStyle="italic"
-                    android:layout_marginTop="10dp"/>
-
-                <Button
-                    android:id="@+id/button_cancelbooking_Transport1"
-                    android:layout_width="225dp"
-                    android:layout_height="35dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/round_corner"
-                    android:backgroundTint="@color/main_color"
-                    android:text="Cancel Booking"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="350dp"
-                android:layout_height="170dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="10dp"
-                android:background="@drawable/styles_linear_layout"
-                android:orientation="vertical">
+                    android:textSize="23sp"
+                    android:textStyle="italic" />
 
                 <TextView
-                    android:id="@+id/textView_notification_Transport3"
+                    android:id="@+id/textView_notification_Transport_Name2"
                     android:layout_width="match_parent"
-                    android:layout_height="87dp"
-                    android:text="Booking! Nethmi Tharushi has booked you in 25/05/2023 to go to Ella. Start from Main Street Malabe, Colombo..."
+                    android:layout_height="30dp"
                     android:textAlignment="center"
                     android:textColor="@color/teal_700"
-                    android:textSize="20sp"
+                    android:text="Nethmi Tharushi"
+                    android:textSize="18sp"
                     android:textStyle="italic"
                     android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Date2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:text="Main Street Malabe, Colombo"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:text="25.05.2023"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Place2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ella"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
 
                 <Button
                     android:id="@+id/button_cancelbooking_Transport2"
                     android:layout_width="225dp"
                     android:layout_height="35dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="55dp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/round_corner"
@@ -157,24 +248,67 @@
                     android:textColor="@color/white" />
             </LinearLayout>
 
+
             <LinearLayout
                 android:layout_width="350dp"
-                android:layout_height="175dp"
+                android:layout_height="260dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
                 android:background="@drawable/styles_linear_layout"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textView_notification_Transport4"
+                    android:id="@+id/textView_notification_Transport3"
                     android:layout_width="match_parent"
-                    android:layout_height="105dp"
-                    android:text="Booking! Thisula Jayathilaka has booked you in 02/06/2023 to go to Anuradhapura . Start from Kanampella, Kosgama..."
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Booking! "
                     android:textAlignment="center"
                     android:textColor="@color/teal_700"
-                    android:textSize="20sp"
+                    android:textSize="23sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Name3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:text="Navinda Heshan"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Date3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:text="Vaga road, Kosgama"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Address3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:text="15.05.2023"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/textView_notification_Transport_Place3"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:text="Galle"
+                    android:textSize="18sp"
                     android:textStyle="italic"
                     android:layout_marginTop="10dp"/>
 
@@ -182,16 +316,17 @@
                     android:id="@+id/button_cancelbooking_Transport3"
                     android:layout_width="225dp"
                     android:layout_height="35dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="55dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:background="@drawable/round_corner"
                     android:backgroundTint="@color/main_color"
                     android:text="Cancel Booking"
                     android:textColor="@color/white" />
             </LinearLayout>
 
-            </LinearLayout>
+
+        </LinearLayout>
 
     </FrameLayout>
 

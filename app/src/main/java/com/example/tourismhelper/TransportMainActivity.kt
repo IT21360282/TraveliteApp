@@ -21,17 +21,11 @@ class TransportMainActivity : AppCompatActivity() {
         val regNumBundle = Bundle()
         regNumBundle.putString("regNum",regNum)
 
-        val tregNumBundle = Bundle()
-        tregNumBundle.putString("tregNum",tregNum)
 
-        val sNameBundle = Bundle()
-        sNameBundle.putString("sName",sName)
 
         loadFragment(TransportHomeFragment(),regNumBundle)
         supportActionBar?.setTitle("Transport Home")
 
-        loadAUpdateFragment(TransportUpdateFragment(),tregNumBundle)
-        supportActionBar?.setTitle("Transport Provider Profile Update")
 
         /*loadActivityBook(TransportProviderBookActivity(),tregNumBundle)
         supportActionBar?.setTitle("Transport Provider Book")*/
@@ -68,10 +62,7 @@ class TransportMainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerTransport,fragment).commit()
 }
 
-    private fun loadAUpdateFragment(fragment: Fragment, bundle: Bundle){
-        fragment.arguments = bundle
-        supportFragmentManager.beginTransaction().replace(R.id.fragmentContainerTransport,fragment).commit()
-    }
+
 
     /*private fun loadActivityBook(fragment: Fragment, bundle: Bundle){
         fragment.arguments = bundle

@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.util.Patterns
 import android.view.View
 import android.widget.*
 import com.example.tourismhelper.database.ResHotelOwnerData
@@ -64,26 +65,60 @@ class ResHotelRegisterActivity : AppCompatActivity() {
                 Toast.makeText(this, "Faild", Toast.LENGTH_SHORT).show()
             }*/
 
-            if(selectedType == "Hotel"){
-                val intent = Intent(this, HotelRegisterActivity::class.java)
-                intent.putExtra("fullName", fullNameTxt)
-                intent.putExtra("userName", userNameTxt)
-                intent.putExtra("email", emailTxt)
-                intent.putExtra("phone", phoneTxt)
-                intent.putExtra("bType", selectedType)
-                intent.putExtra("password", passwordTxt)
-                startActivity(intent)
+            if(!userNameTxt.contains(" ")){
+                if(passwordTxt == reTypePasswordTxt && passwordTxt.isNotEmpty()){
+                    if(termCondition.isChecked == true){
+                        if(fullNameTxt.isNotEmpty() && userNameTxt.isNotEmpty() && emailTxt.isNotEmpty() && phoneTxt.isNotEmpty()){
+                            if(phoneTxt.length == 10){
+                                if( Patterns.EMAIL_ADDRESS.matcher(emailTxt).matches()){
+                                    if(selectedType == "Hotel"){
+                                        val intent = Intent(this, HotelRegisterActivity::class.java)
+                                        intent.putExtra("fullName", fullNameTxt)
+                                        intent.putExtra("userName", userNameTxt)
+                                        intent.putExtra("email", emailTxt)
+                                        intent.putExtra("phone", phoneTxt)
+                                        intent.putExtra("bType", selectedType)
+                                        intent.putExtra("password", passwordTxt)
+                                        startActivity(intent)
+                                    }
+                                    else if(selectedType == "Restaurant"){
+                                        val intent = Intent(this, RestaurantRegisterActivity::class.java)
+                                        intent.putExtra("fullName", fullNameTxt)
+                                        intent.putExtra("userName", userNameTxt)
+                                        intent.putExtra("email", emailTxt)
+                                        intent.putExtra("phone", phoneTxt)
+                                        intent.putExtra("bType", selectedType)
+                                        intent.putExtra("password", passwordTxt)
+                                        startActivity(intent)
+                                    }
+                                }
+                                else{
+                                    Toast.makeText(this,"Invalid Email Format", Toast.LENGTH_SHORT).show()
+                                }
+                            }
+                            else{
+                                Toast.makeText(this,"Invalid Contact Number Format", Toast.LENGTH_SHORT).show()
+                            }
+
+
+                        }
+                        else{
+                            Toast.makeText(this,"Please Fill All Fields", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                    else{
+                        Toast.makeText(this,"Please Accept Term & Conditions", Toast.LENGTH_SHORT).show()
+                    }
+                }
+                else{
+                    Toast.makeText(this,"Retype Password Correctly", Toast.LENGTH_SHORT).show()
+                }
             }
-            else if(selectedType == "Restaurant"){
-                val intent = Intent(this, RestaurantRegisterActivity::class.java)
-                intent.putExtra("fullName", fullNameTxt)
-                intent.putExtra("userName", userNameTxt)
-                intent.putExtra("email", emailTxt)
-                intent.putExtra("phone", phoneTxt)
-                intent.putExtra("bType", selectedType)
-                intent.putExtra("password", passwordTxt)
-                startActivity(intent)
+            else{
+                Toast.makeText(this,"Username Cannot Contain Spaces", Toast.LENGTH_SHORT).show()
             }
+
+
 
             /*if(userNameTxt.isNotEmpty()){
 

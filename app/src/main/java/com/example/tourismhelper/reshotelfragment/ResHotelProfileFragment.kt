@@ -275,6 +275,8 @@ class ResHotelProfileFragment : Fragment() {
                         }
                         else{
                             changePassword(username.toString(), edtNewPassword.text.toString())
+                            container.removeView(overlayView)
+                            popupWindow.dismiss()
                         }
 
                     }
@@ -447,10 +449,12 @@ class ResHotelProfileFragment : Fragment() {
                         Patterns.EMAIL_ADDRESS.matcher(edtEmail.text.toString()).matches() && Patterns.EMAIL_ADDRESS.matcher(edtBusinessEmail.text.toString()).matches()){
                         updateProfile(username.toString(),edtName.text.toString(),edtEmail.text.toString(),edtPhone.text.toString(),edtBusinessName.text.toString(),
                         edtBusinessEmail.text.toString(),edtBusinessContact.text.toString(),edtLocation.text.toString())
+                        container.removeView(overlayView)
+                        popupWindow.dismiss()
                     }
                 }
                 else{
-                    Toast.makeText(context, "All Feild Shoud be Filled",Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, "All Feild Should be Filled",Toast.LENGTH_SHORT).show()
                 }
 
             }

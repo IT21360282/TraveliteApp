@@ -21,7 +21,7 @@ class TouristMainActivity : AppCompatActivity() {
         logtourBundle.putString("logtour",logtour)
 
         loadFragment(TouristHomeFragment(), logtourBundle)
-        supportActionBar?.setTitle("Transport Home")
+        supportActionBar?.setTitle("Tourist Home")
 
         var TouristBtnNav = findViewById<BottomNavigationView>(R.id.TouristBtnNav)
         TouristBtnNav.setOnItemSelectedListener { item->
@@ -30,6 +30,7 @@ class TouristMainActivity : AppCompatActivity() {
                 R.id.tournavHome ->{
                     loadFragment(TouristHomeFragment(), logtourBundle)
                      true
+
                 }R.id.tournavHistory->{
                 loadFragment(TouristHistoryFragment(), logtourBundle)
                  true

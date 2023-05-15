@@ -61,11 +61,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:layout_weight="5"
-                        android:text="Review"
+                        android:backgroundTint="@color/main_color"
+                        android:text="Tour Guides"
                         android:textAllCaps="false"
                         android:textColor="@color/div_box"
-                        android:textSize="13sp"
-                        android:backgroundTint="@color/main_color"/>
+                        android:textSize="13sp" />
 
                     <Button
                         android:id="@+id/touristhomebutton2"
@@ -104,11 +104,11 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:layout_weight="5"
-                        android:text="Notification"
+                        android:backgroundTint="@color/main_color"
+                        android:text="Reviews"
                         android:textAllCaps="false"
                         android:textColor="@color/div_box"
-                        android:textSize="13sp"
-                        android:backgroundTint="@color/main_color"/>
+                        android:textSize="13sp" />
 
                     <Button
                         android:id="@+id/touristhomebutton5"

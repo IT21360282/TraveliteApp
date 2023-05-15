@@ -35,6 +35,9 @@ class TouristProfileFragment : Fragment() {
 
         val logtour = arguments?.getString("logtour")
 
+        val logtourBundle = Bundle()
+        logtourBundle.putString("logtour",logtour)
+
         var tourfirstname = view.findViewById<TextView>(R.id.textView11)
         var tourlastname = view.findViewById<TextView>(R.id.textView12)
         var touremail = view.findViewById<TextView>(R.id.textView13)
@@ -64,14 +67,14 @@ class TouristProfileFragment : Fragment() {
         }
          val btnDeleteProf = view.findViewById<Button>(R.id.btnDeleteProf)
         btnDeleteProf.setOnClickListener {
-            deactivateprofile("touristUsername.")
-            val intent = Intent(context,TouristLoginActivity:: class.java)
-            startActivity(intent)
+            deactivateprofile(logtour.toString())
+
         }
 
          val btnUpdateProf = view.findViewById<Button>(R.id.btnUpdateProf)
         btnUpdateProf.setOnClickListener {
             Toast.makeText(context , "Update the Tourist", Toast.LENGTH_SHORT).show()
+            TouristProfileUpdateFragment().arguments = logtourBundle
             parentFragmentManager.beginTransaction().replace(R.id.fragmentContainerTourist,TouristProfileUpdateFragment()).commit()
         }
 
@@ -85,6 +88,8 @@ class TouristProfileFragment : Fragment() {
         databaseReference = FirebaseDatabase.getInstance().getReference("tourist")
         databaseReference.child(logtour.toString()).removeValue().addOnSuccessListener {
             Toast.makeText(context, "Prolife Deleted Successfully", Toast.LENGTH_SHORT).show()
+            val intent = Intent(context,TouristLoginActivity:: class.java)
+            startActivity(intent)
         }
             .addOnFailureListener{
             }

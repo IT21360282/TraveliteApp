@@ -17,7 +17,7 @@ class TransportProviderBookActivity : AppCompatActivity() {
         setContentView(R.layout.activity_transport_provider_book)
 
         var bookTravelTourist = supportActionBar
-        bookTravelTourist?.setTitle("Book Register")
+        bookTravelTourist?.setTitle("Book Transport Provider")
 
         var touristTransportName = findViewById<EditText>(R.id.textView_bookName_Transport)
         var touristTransportAddress = findViewById<EditText>(R.id.textView_bookAddress_Transport)

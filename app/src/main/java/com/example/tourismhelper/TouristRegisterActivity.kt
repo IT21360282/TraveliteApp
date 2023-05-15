@@ -1,7 +1,9 @@
 package com.example.tourismhelper
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Patterns
 import android.view.View
 import android.widget.*
 import com.example.tourismhelper.touristDatabase.tourist
@@ -51,29 +53,43 @@ class TouristRegisterActivity : AppCompatActivity() {
 
             if (touristUsername.text.toString().isNotEmpty()) {
                 if (touristContactNumber.text.toString().matches(Regex("^[0-9]{13}\$"))) {
-                    databaseReference = FirebaseDatabase.getInstance().getReference("tourist")
-                    var Tourists = tourist(
-                        touristFirstname.text.toString(),
-                        touristLastname.text.toString(),
-                        touristemail.text.toString(),
-                        touristUsername.text.toString(),
-                        touristContactNumber.text.toString(),
-                        touristBirthCountry.text.toString(),
-                        touristTxt,
-                        touristPassword.text.toString()
-                    )
+                    if(touristPassword.text.toString().length>=4){
+                        if( Patterns.EMAIL_ADDRESS.matcher(touristemail.text.toString()).matches()){
+                            databaseReference = FirebaseDatabase.getInstance().getReference("tourist")
+                            var Tourists = tourist(
+                                touristFirstname.text.toString(),
+                                touristLastname.text.toString(),
+                                touristemail.text.toString(),
+                                touristUsername.text.toString(),
+                                touristPassword.text.toString(),
+                                touristContactNumber.text.toString(),
+                                touristBirthCountry.text.toString(),
+                                touristTxt,
 
-                    databaseReference.child(touristUsername.text.toString()).setValue(Tourists)
-                        .addOnSuccessListener {
-                            Toast.makeText(this, "Successfully Register", Toast.LENGTH_SHORT).show()
-                        }.addOnFailureListener {
-                            Toast.makeText(
-                                this,
-                                "Failed to Register, Try Again",
-                                Toast.LENGTH_SHORT
-                            )
-                                .show()
+                                )
+
+                            databaseReference.child(touristUsername.text.toString()).setValue(Tourists)
+                                .addOnSuccessListener {
+                                    Toast.makeText(this, "Successfully Register", Toast.LENGTH_SHORT).show()
+                                    startActivity(Intent(this,TouristLoginActivity::class.java))
+                                    finish()
+                                }.addOnFailureListener {
+                                    Toast.makeText(
+                                        this,
+                                        "Failed to Register, Try Again",
+                                        Toast.LENGTH_SHORT
+                                    )
+                                        .show()
+                                }
                         }
+                        else{
+                            Toast.makeText(this, "This is an invalid email", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                    else{
+                        Toast.makeText(this, "Password should contain atleast 4 characters", Toast.LENGTH_SHORT).show()
+                    }
+
                 } else {
                     Toast.makeText(this, "This is an invalid number", Toast.LENGTH_SHORT).show()
                 }

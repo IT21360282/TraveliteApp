@@ -84,7 +84,7 @@ class ResHotelHistoryFragment : Fragment() {
                     bookingID.textSize = 20f
                     bookingID.setTypeface(null, Typeface.BOLD)
                     val tvBookingID = TextView(context)
-                    tvBookingID.text = ""
+                    tvBookingID.text = booking!!.bookingID
                     tvBookingID.textSize = 18f
                     tvBookingID.setPadding(10,0,0,15)
 

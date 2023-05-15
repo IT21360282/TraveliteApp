@@ -3,9 +3,10 @@ package com.example.tourismhelper
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.view.Gravity
+import android.view.View
+import android.view.ViewGroup
+import android.widget.*
 import com.example.tourismhelper.tourfragment.TouristHomeFragment
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -29,10 +30,20 @@ class TouristLoginActivity : AppCompatActivity() {
             /*Toast.makeText(this, "Transport Selected", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, TransportMainActivity::class.java)
             startActivity(intent)*/
+            /*val overlayView = View(this)
+            overlayView.setBackgroundResource(R.drawable.popup_overlay)
+            overlayView.alpha = 1f
+            overlayView.isClickable = false
+            val container = findViewById<FrameLayout>(R.id.popupContainer)*/
 
-            val intent = Intent(this, TouristMainActivity::class.java)
+            val loadingPopupView = layoutInflater.inflate(R.layout.layout_loading_popup, null)
+            val loadingPopupWindow = PopupWindow(loadingPopupView,
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT)
+            loadingPopupWindow.isFocusable = true
 
-            startActivity(intent)
+            //container.addView(overlayView)
+            loadingPopupWindow.showAtLocation(window.decorView, Gravity.CENTER, 0, 0)
 
             databaseReference = FirebaseDatabase.getInstance().getReference("tourist")
             databaseReference.child(registertourist.text.toString()).get().addOnSuccessListener {
